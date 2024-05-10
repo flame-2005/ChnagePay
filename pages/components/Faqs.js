@@ -31,17 +31,21 @@ const FaqItem = ({ question, answer }) => {
 const FaqSection = () => {
     const faqData = [
         {
-            question: 'What kind of support do you offer for college applications?',
-            answer: 'We provide comprehensive support for college applications, including personalized guidance, application strategy development, assistance with essay writing, and preparation for interviews. Our goal is to ensure that each student presents a compelling and unique application that stands out to admissions committees.',
+            question: 'Why should we join Changepay?            ',
+            answer: 'Delivery of food and other services orders on app Easy delivery through smart boxes Exclusive offers and promotions for students.',
         },
         {
-            question: 'Can you help with scholarship Applications?',
-            answer: 'Absolutely! We offer dedicated assistance for scholarship applications. Our services include guidance on identifying suitable scholarships, crafting compelling application essays, and ensuring all required documentation is in order. We aim to maximize your chances of securing scholarships that align with your academic and personal achievements.',
+            question: 'What are the features other than buying from merchants?             ',
+            answer: 'Changepay is not only a commerce platform but also enables the student sellers, selling tickets in  events and other college club networks. Changepay is a one stop solution for students for any commerce activities.             ',
         },
         {
-            question: 'How experienced are your consultants?',
-            answer: 'Our consultants are highly experienced professionals with a wealth of expertise in education consulting. Each member of our team possesses a strong background in academia, admissions, and career guidance. Rest assured, our consultants are committed to providing you with the highest level of expertise and personalized support to help you achieve your academic and career goals.',
+            question: 'Can students order or buy from outside merchants?             ',
+            answer: 'Its left to the courtesy college administration.     ',
         },
+        {
+            question: 'How are smart boxes useful?             ',
+            answer: 'Smart boxes eliminate crowding in front of shops. Students can order and pick up whenever they want which helps in saving lot of time for students.  ',
+        }
     ];
 
     return (

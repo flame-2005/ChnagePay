@@ -76,95 +76,42 @@ export default function Home() {
   <p class="inline-block text-4xl text-black">Our</p>
   <span class="inline-block">&nbsp;</span>
   <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">Program</p>
+  <p class="inline-block text-4xl text-custom-orange">Presence</p>
 </div>
 
   <div class="container px-5 py-4 mx-auto">
     <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/3 ">
         <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710579360/90063972_xz93h7.webp" alt="blog"/>
+          <img class="lg:h-48 md:h-36 mx-auto object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1706348568/download_1_gnhond.png" alt="blog"/>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">National Institute of technology Karnataka</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-custom-orange inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
+            {/* */}
+            
           </div>
         </div>
       </div>
       <div class="p-4 md:w-1/3 ">
         <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710579360/90063972_xz93h7.webp" alt="blog"/>
+          <img class="lg:h-48 md:h-36  mx-auto object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozHEJ9lxt8ZFVX6xhU4AbRC8dvYe_osDc8SzcjnlNbg&s" alt="blog"/>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">National Institute of technology Karnataka</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-custom-orange inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MIT-Manipal</h1>
+            
+            
           </div>
         </div>
       </div>
       <div class="p-4 md:w-1/3 ">
         <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710579360/90063972_xz93h7.webp" alt="blog"/>
+          <img class="lg:h-48 md:h-36 mx-auto object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-wKWMAscw-cVOtTOs87TvVeoZp5O0-LrvWwN3azvAw&s" alt="blog"/>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">National Institute of technology Karnataka</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-custom-orange inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">IIM KOZHIKODE
+</h1>
+            
+            
           </div>
         </div>
       </div>
@@ -172,59 +119,23 @@ export default function Home() {
     <div class="flex flex-wrap justify-center -m-4">
     <div class="p-4 md:w-1/3 ">
         <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710579360/90063972_xz93h7.webp" alt="blog"/>
+          <img class="lg:h-48 md:h-36 mx-auto object-cover object-center" src="https://www.financialexpress.com/wp-content/uploads/2022/05/MAHE-logo.png" alt="blog"/>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">National Institute of technology Karnataka</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-custom-orange inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MAHE Manipal</h1>
+            
+            
           </div>
         </div>
       </div>
       <div class="p-4 md:w-1/3 ">
         <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710579360/90063972_xz93h7.webp" alt="blog"/>
+          <img class="lg:h-48 md:h-36 mx-auto object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyH1NTivJQTg1zZ8GDf5MFQ2BA8MhxSZJlc4Q_fOhSzg&s" alt="blog"/>
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">National Institute of technology Karnataka</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-custom-orange inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">NIT Calicut</h1>
+            
+            
           </div>
         </div>
       </div>
@@ -323,7 +234,9 @@ export default function Home() {
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2>
             <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <p class="leading-relaxed">NITK students CHANGE the way they PAY
+
+<link rel="stylesheet" href="" />Read more at: https://www.deccanherald.com/content/602201/nitk-students-change-way-they.html</p>
           </div>
         </div>
       </div>
@@ -331,9 +244,12 @@ export default function Home() {
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581654/famous-2_fhsy2t.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">What they wanna Say</h2>
+            {/* <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1> */}
+            <p class="leading-relaxed">Speaking to Bangalore Mirror of their achievement, Dhyvik GJ
+
+Read more at:
+https://bangaloremirror.indiatimes.com/news/state/the-way-you-pay-may-soon-change/articleshow/57723069.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst</p>
           </div>
         </div>
       </div>

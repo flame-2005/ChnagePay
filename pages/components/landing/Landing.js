@@ -48,8 +48,8 @@ const Landing = () => {
         <h1 className='hover:text-custom-orange text-2xl font-bold mx-auto mt-20'>Students</h1> 
         <p className =  'hover:text-custom-orange text-xl ' >
           
-          Elevate campus living:
- Unleash local commerce across India
+        A unique opportunity for students to experience entrepreneurship.
+
               
           </p>
         </div>
@@ -61,8 +61,8 @@ const Landing = () => {
         <h1 className='hover:text-custom-orange text-2xl font-bold mx-auto'>Seller</h1>
         <p className =  'hover:text-custom-orange text-xl ' >
 
-        Elevate campus living:
- Unleash local commerce across India
+        Learn more about how our platform helps campus sellers.
+
         </p>
         </div>
         </button>
