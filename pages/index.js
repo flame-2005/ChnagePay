@@ -247,9 +247,7 @@ export default function Home() {
             <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">What they wanna Say</h2>
             {/* <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1> */}
             <p class="leading-relaxed">Speaking to Bangalore Mirror of their achievement, Dhyvik GJ
-
-Read more at:
-https://bangaloremirror.indiatimes.com/news/state/the-way-you-pay-may-soon-change/articleshow/57723069.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst</p>
+</p>
           </div>
         </div>
       </div>

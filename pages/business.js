@@ -30,15 +30,25 @@ const business = () => {
       <img class="object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710569211/Group_4_kdhqu8.png"/>
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <ul className="flex text-xl">
+      {/* <ul className="flex text-xl">
         <li className="mb-2 text-custom-orange">Student</li>
         <li className="mx-4 mb-2" >Sellers</li>
         <li className="mx-4 mb-2">Campasus</li>
-      </ul>
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-        <br class="hidden lg:inline-block"/>readymade gluten
+      </ul> */}
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Discover the Benefits of Student 
+        <br class="lg:inline-block text-custom-orange"/>Entrepreneurship!
       </h1>
-      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+      {/* <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p> */}
+      <ol className='text-xl text-custom-orange my-5'>
+        <li>1. Learn about the platform
+</li>
+        <li>2. Establish and Run Operations
+
+</li>
+<li>
+  3. Earn money and certificates.
+</li>
+      </ol>
       <div class="flex justify-center">
         <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
         {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> */}

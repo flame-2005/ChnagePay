@@ -107,7 +107,7 @@ delivery of parcels </li>
 </p>
       <div class="flex justify-center">
         <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
-         <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> 
+         {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>  */}
        </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -156,7 +156,7 @@ delivery of parcels </li>
         </div>
       </div>
     </div>
-    <button class="flex mx-auto mt-16 text-white bg-custom-orange border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
+    <button class="flex mx-auto mt-16 text-white bg-custom-orange border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
   </div>
 </section>
 <div className='text-gray-600 body-font'>
@@ -216,7 +216,7 @@ delivery of parcels </li>
 <section class="gradient-form h-full bg-neutral-200 ">
   <div class="container h-full p-10">
     <div
-      class="flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
+      class="flex mx-auto h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
       <div class="w-full">
         <div
           class="block rounded-lg bg-white shadow-lg ">
@@ -231,12 +231,12 @@ delivery of parcels </li>
                     src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                     alt="logo" />
                   <h4 class="mb-12 mt-1 pb-1 text-xl font-semibold text-black">
-                    We are The Lotus Team
+                    We are The ChangePay Team
                   </h4>
                 </div>
 
                 <form>
-                  <p class="mb-4 text-black">Please login to your account</p>
+                  <p class="mb-4 text-black">Lets connect</p>
                   {/* <!--Username input--> */}
                   <div class="relative mb-4" data-twe-input-wrapper-init>
                     <input
@@ -264,6 +264,43 @@ delivery of parcels </li>
                       >Email
                     </label>
                   </div>
+                  <div class="relative mb-4" data-twe-input-wrapper-init>
+                    <input
+                      type="Email"
+                      class="peer block min-h-[auto] w-full rounded bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0 border-2 border-custom-orange text-black "
+                      id="exampleFormControlInput1"
+                      placeholder="Username" />
+                    <label
+                      for="exampleFormControlInput1"
+                      class="pointer-events-none text-black absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6]  transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:peer-focus:text-primary"
+                      >Phone No
+                    </label>
+                  </div>
+                  <div class="relative mb-4" data-twe-input-wrapper-init>
+  <select
+    class="peer block min-h-[auto] w-full rounded bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0 border-2 border-custom-orange text-black"
+    id="exampleFormControlInput1">
+    <option value="" disabled selected>Interested Role</option>
+    <option value="option1">Student</option>
+    <option value="option2">Seller</option>
+    <option value="option3">Campus</option>
+  </select>
+ 
+</div>
+
+<div class="relative mb-4" data-twe-input-wrapper-init>
+                    <input
+                      type="Email"
+                      class="peer block min-h-[auto] w-full rounded bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0 border-2 border-custom-orange text-black "
+                      id="exampleFormControlInput1"
+                      placeholder="Username" />
+                    <label
+                      for="exampleFormControlInput1"
+                      class="pointer-events-none text-black absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6]  transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:peer-focus:text-primary"
+                      >Requirements or Specific Questions
+                    </label>
+                  </div>
+
 
                   {/* <!--Submit button--> */}
                   <div class="mb-12 pb-1 pt-1 text-center">
@@ -277,41 +314,33 @@ delivery of parcels </li>
                     </button>
 
                     {/* <!--Forgot password link--> */}
-                    <a href="#!">Forgot password?</a>
                   </div>
 
                   {/* <!--Register button--> */}
-                  <div class="flex items-center justify-between pb-6">
-                    <p class="mb-0 me-2">Dont have an account?</p>
-                    <button
-                      type="button"
-                      class="inline-block rounded border-2 border-danger px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-danger-50/50 hover:text-danger-600 focus:border-danger-600 focus:bg-danger-50/50 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700 dark:hover:bg-rose-950 dark:focus:bg-rose-950"
-                      data-twe-ripple-init
-                      data-twe-ripple-color="light">
-                      Register
-                    </button>
-                  </div>
+              
                 </form>
               </div>
             </div>
 
             {/* <!-- Right column container with background and description--> */}
             <div
-              class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-e-lg lg:rounded-bl-none">
-              <div class="px-4 py-6 text-white md:mx-6 md:p-12">
-                <h4 class="mb-6 text-xl font-semibold">
-                  We are more than just a company
-                </h4>
-                <p class="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
-                </p>
-              </div>
-            </div>
+  className="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-e-lg lg:rounded-bl-none"
+  style={{
+    background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
+  }}
+>
+  <div className="px-4 py-6 text-white md:mx-6 md:p-12">
+    <h4 className="mb-6 text-xl font-semibold">
+      We are more than just a company
+    </h4>
+    <p className="text-sm">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+</div>
+
           </div>
+       
         </div>
       </div>
     </div>
