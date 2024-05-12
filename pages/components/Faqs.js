@@ -54,26 +54,14 @@ const FaqSection = () => {
                 <div className="max-w-4xl mx-auto mb-14">
                     <h1 className="mb-4 text-3xl font-bold text-center text-custom-orange">FAQs-Frequently Asked Questions</h1>
                     <p className="text-center mb-7 mx-auto text-gray-500">
-                        We tailor the college selection by analyzing each student&apos;s academics, interests, and career goals,
-                        ensuring a perfect match between student aspirations and college offerings
+                    Changepay serves as the pivotal technological solution revolutionizing campus commerce, offering a seamless transition to a digital platform that enhances convenience and adaptability for students, sellers, and the entire campus community
                     </p>
-                    <p className=' '>
-                        How do you personalize the college selection process?
-                    </p>
-                    <p className="mb-2 mx-auto text-gray-400">
-                        Our personalization process for college selection is thorough and student-focused. We begin by evaluating the student&apos;s academic achievements and understanding their individual interests and passions. From there, we assess their long-term career aspirations. Combining these insights, we then curate a list of colleges that align perfectly with their unique academic and career objectives, ensuring a tailored match for each student.
-
-
-
-
-
-
-                    </p>
+                   
                 </div>
             </div>
 
             <div className="max-w-4xl mx-auto">
-                <div className="w-full p-4 rounded-md shadow-lg bg-stone-50 -mt-36 lg:full">
+                <div className="w-full p-4 py-0 rounded-md shadow-lg bg-stone-50 -mt-36 lg:full">
                     <div className="flex-1">
                         {faqData.map((faq, index) => (
                             <FaqItem key={index} question={faq.question} answer={faq.answer} />

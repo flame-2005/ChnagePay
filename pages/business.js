@@ -58,11 +58,11 @@ const business = () => {
 </section>
 {/* <!-- component --> */}
 <div className="">
-      <p className="text-black text-center text-4xl font-bold">               Student Enterpreneurial role:
+      <p className="text-black text-center text-4xl font-bold">               Student Enterpreneurial role: How Does It Work?
 
  
 </p>
-<p className="text-custom-orange text-center text-4xl font-bold">How Does It Work</p>
+<p className="text-custom-orange text-center text-4xl font-bold"></p>
     </div>
 <Swiper
         slidesPerView={1}
@@ -73,7 +73,7 @@ const business = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper mt-10"
       >
         
         <SwiperSlide>
@@ -114,7 +114,7 @@ const business = () => {
   <p class="inline-block text-4xl text-black">Explore</p>
   <span class="inline-block">&nbsp;</span>
   <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">Tech</p>
+  <p class="inline-block text-4xl text-custom-orange">The Tech</p>
 </div>
     <div class="flex flex-wrap -m-4">
     
@@ -152,55 +152,39 @@ const business = () => {
 </section>
 <section class="text-gray-600 body-font">
     <div>
-    
-    <div className="">
-      <p className="text-black text-center text-4xl font-bold">              Campus Commers
-
- 
-</p>
-<p className="text-custom-orange text-center text-4xl font-bold mb-10">Solution for Sellers</p>
-    </div>
-    </div>
-  <div class="container mx-auto flex md:flex-row flex-col items-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="https://res.cloudinary.com/dtyombve3/image/upload/v1712974586/Group_66_ai9qok.png"/>
-    </div>
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-        <br class="hidden lg:inline-block"/>readymade gluten
-      </h1>
-      <p class="mb-8 leading-relaxed">Do you have businesses inside or vicinity of the campus?
- here is a perfect digitization option for you.</p>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
-        {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> */}
-      </div>
-    </div>
-  </div>
-</section>
-<div className='mt-10'>
-<p className="text-black text-center text-4xl font-bold">              Do You have Business inside or vicinity of
-The Campus 
-</p>
-<div class="container mx-auto flex md:flex-row flex-col w-1/2 left-0 mt-10">
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center mr-10">
-      <h1 class="title-font text-center sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Here Is the 
-perfect Digitization 
-Option for You
-        {/* <br class="hidden lg:inline-block"/>readymade gluten */}
-      </h1>
-      {/* <p class="mb-8 leading-relaxed">Do you have businesses inside or vicinity of the campus?
- here is a perfect digitization option for you.</p> */}
-      <div class="flex justify-center items-center mx-auto">
-        <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
-        {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> */}
-      </div>
-    </div>
-   <div className='w-52 h-52 rounded-full bg-black'>
-
-   </div>
-  </div>
+   
+   
+    <div class="text-center font-bold mb-10">
+  <p class="inline-block text-4xl text-black">Campus Commers</p>
+  <span class="inline-block">&nbsp;</span>
+  <span class="inline-block">&nbsp;</span>
+  <p class="inline-block text-4xl text-custom-orange">Solution for Sellers</p>
 </div>
+
+    </div>
+    <div class="container w-full mx-auto flex justify-center">
+    <div class="flex items-center text-center">
+      <div>
+
+        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1715498249/Group_66_iabzlb.png" class='h-80' alt=""/>
+      </div>
+      <div>
+        
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Do You have Business inside or 
+            <br class="hidden lg:inline-block"/>vicinity of The Campus 
+        </h1>
+        <p class="mb-8 leading-relaxed text-custom-orange">Here Is the perfect Digitization Option for You</p>
+        <div class="flex justify-center">
+            <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
+           
+        </div>
+      </div>
+    </div>
+</div>
+
+
+</section>
+
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
   <div class="text-center font-bold mb-10">

@@ -85,33 +85,84 @@ delivery of parcels </li>
 </section>
 </div>
 <section class="text-gray-600 body-font">
-<div className="">
-      <p className="text-black text-center text-4xl font-bold">               Where students unite to cultivate sustainable 
- 
-</p>
-<p className="text-custom-orange text-center text-4xl font-bold">campus businesses.</p>
-    </div>
+<div className='flex item center'>
+    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-20' alt="" />
+    <div class="text-center font-bold my-auto">
+  <p class="inline-block text-4xl text-black">How does SmartBox Works </p>
+  <span class="inline-block">&nbsp;</span>
+  <span class="inline-block">&nbsp;</span>
+  {/* <p class="inline-block text-4xl text-custom-orange">User-Friendly IoT SmartBox. </p> */}
+</div>
+ </div>
   <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-        <br class="hidden lg:inline-block"/>readymade gluten
-      </h1>
-      <p class="mb-8 leading-relaxed text-custom-orange"> 
+   
+<ol class="relative border-s border-gray-200 dark:border-gray-700 mt-20">                  
+    <li class="mb-10 ms-6">            
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">Place an order on  ChangePay with SmartBox 
+Delivery Options</h3>
+       
+        
+        
+    </li>
+    <li class="mb-10 ms-6">            
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">Seller  accept the order</h3>
+       
+        
+        
+    </li>
+    <li class="mb-10 ms-6">            
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">  Delivery agents drop the orders in the box</h3>
+       
+        
+        
+    </li>
+    <li class="mb-10 ms-6">            
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">Get notification about order being delivered to smartbox</h3>
+       
+        
+        
+    </li>
+    <li class="mb-10 ms-6">            
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">Use app to open SmartBox</h3>
+       
+        
+        
+    </li>
+  
+   
+</ol>
 
-      Transform campus life with a unique entrepreneurial experience tailored for students. Our platform offers immersive challenges, mentorship, and a vibrant community, empowering students to unleash their entrepreneurial potential. Elevate your institutions impact and inspire innovation today. Click below to explore!
 
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 right-10 absolute">
+    <video width="640" height="360" controls>
+        <source src="https://res.cloudinary.com/dtyombve3/video/upload/v1715497586/Changepay_-_Smartbox_operation_video_yqxecc.mp4" type="video/mp4"/>
 
-
-
-
-</p>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
-         {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>  */}
-       </div>
-    </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710569211/Group_4_kdhqu8.png"/>
+    </video>
     </div>
   </div>
 </section>
@@ -156,7 +207,7 @@ delivery of parcels </li>
         </div>
       </div>
     </div>
-    <button class="flex mx-auto mt-16 text-white bg-custom-orange border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
+    <button class="flex mx-auto mt-16  bg-custom-orange border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
   </div>
 </section>
 <div className='text-gray-600 body-font'>
@@ -305,7 +356,7 @@ delivery of parcels </li>
                   {/* <!--Submit button--> */}
                   <div class="mb-12 pb-1 pt-1 text-center">
                     <button
-                      class="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-dark-3 transition duration-150 ease-in-out hover:shadow-dark-2 focus:shadow-dark-2 focus:outline-none focus:ring-0 active:shadow-dark-2 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong bg-gradient-to-r from-orange-500 via-red-600 to-pink-600"
+                      class="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal  shadow-dark-3 transition duration-150 ease-in-out hover:shadow-dark-2 focus:shadow-dark-2 focus:outline-none focus:ring-0 active:shadow-dark-2 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong bg-gradient-to-r from-orange-500 via-red-600 to-pink-600"
                       type="button"
                       data-twe-ripple-init
                       data-twe-ripple-color="light"
@@ -329,12 +380,12 @@ delivery of parcels </li>
     background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
   }}
 >
-  <div className="px-4 py-6 text-white md:mx-6 md:p-12">
+  <div className="px-4 py-6  md:mx-6 md:p-12">
     <h4 className="mb-6 text-xl font-semibold">
       We are more than just a company
     </h4>
     <p className="text-sm">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Changepays directors, executives, and advisors have fostered a community-focused approach, emphasizing partnerships and fostering entrepreneurship opportunities for students while studying. Our vision is to serve as a bridge for students to explore industry and startup experiences.
     </p>
   </div>
 </div>
@@ -346,6 +397,133 @@ delivery of parcels </li>
     </div>
   </div>
 </section>
+<div class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-4">Changepay Privacy Policy
+</h1>
+
+        <p class="mb-4">
+        ChangePay MMS Technologies Ltd.
+<br />
+Effective Date: 28/11/2023
+<br />
+Last Updated: 01/04/2024
+
+        </p>
+
+        <h2 class="text-2xl font-bold mb-2">Introduction
+</h2>
+<p class="mb-4">
+This Privacy Policy outlines how we collect, use, and protect your personal information when you use our app. We are committed to respecting your privacy and ensuring the security of your data.
+
+        </p>
+
+        <h2 class="text-2xl font-bold mb-2">Information We Collect</h2>
+
+        <p class="mb-4">
+            We may collect the following information:
+        </p>
+
+        <ul class="list-disc list-inside mb-4">
+            <li>Media files(Images, Videos and Audio)
+<br />
+Our application may request to collect user images, audio and video (with explicit consent dialog, permission and purpose each time) for various purposes, such as profile pictures or content submission for app functionality. Please be aware that any content by user submitted to our platform may be stored on our servers for future use. However, we do not share these Media content with third parties; they are only used for internal purposes, such as improving our services and user experience. By submitting an Media to our platform, you acknowledge and consent to our collection and storage of your media files.
+</li>
+            <li>Contact List Information
+<br />
+Our application may request to collect your contact list information (with explicit consent dialog, permission and purpose each time), we request permission to collect a contact when you choose to give access to import a contact from your device during placing Pikap type orders. This imports a single contact from your device and we use this contact purely for app functionality standpoint (Facilitate the Pikap type order smoothly). Please be aware that any contact submitted to our platform may be stored on our servers for future use. We don't sell or share the contact name or phone number to third parties and only for internal purposes. By uploading a contact information to our platform, you acknowledge and consent to our collection and storage of your contact.</li>
+            <li>Precise Location Information and How to Opt Out
+<br />
+When you use one of our location-enabled services (for example, when you access Services from a mobile device), we may collect and process information about your mobile device's GPS location (including the latitude, longitude or altitude of your mobile device) and the time the location information is recorded to customize the Services with location-based information and features (for example, to inform you about restaurants in your area or applicable promotions). Some of these services require your personal data for the feature to work and we may associate location data with your device ID and other information we hold about you. We keep this data for no longer than is reasonably necessary for providing services to you. If you wish to use the particular feature, you will be asked to consent to your data being used for this purpose. You can withdraw your consent at any time by disabling the GPS or other location-tracking functions on your device, provided your device allows you to do this. See your device manufacturer's instructions for further details.
+
+</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold mb-2">Data Security
+</h2>
+
+        <p class="mb-4">
+        We take data security seriously and implement reasonable measures to protect your personal information. This includes encryption, access controls, and regular security assessments.
+
+        </p>
+
+       
+
+        <h2 class="text-2xl font-bold mb-2">SData Sharing
+</h2>
+
+        <p class="mb-4">
+        We do not sell, rent, or share your personal information with third parties for their marketing purposes. However, we may share your data with service providers or partners who help us operate, maintain, or enhance our app, subject to strict data protection agreements.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-2">Request for account actions
+</h2>
+
+        <p class="mb-4">
+
+You have the following rights regarding your data
+
+Access: You can request a copy of the data we hold about you.
+
+Correction: You can update or correct your data within the app
+
+Deletion: If you are using the consumer app, you can go to Account `{'>'}` Profile `{'>'}`Delete my account,
+
+else you can request the deletion of your data for other apps, subject to legal requirements. For any of the above requirements fill this form <link rel="stylesheet" href="https://forms.gle/E6i91Lq4SfKNcPiQA " placeholder='hii' />and we will reach to you within 7 working days.
+
+
+
+        </p>
+        <h2 class="text-2xl font-bold mb-2">Consent and Permissions
+</h2>
+
+        <p class="mb-4">
+           
+By using our app, you consent to our collection and use of your data as described in this policy. You can manage your app permissions in your device's settings.
+
+        </p>
+
+        <h2 class="text-2xl font-bold mb-2">Update to this privacy policy
+</h2>
+
+        <p class="mb-4">
+        We may update this Privacy Policy to reflect changes in our data practices. When we do so. the "Last Updated" date will be revised. We recommend reviewing this policy periodically.
+
+
+        </p>
+        <h2 class="text-2xl font-bold mb-2">Contact Us
+
+</h2>
+
+        <p class="mb-4">
+
+
+If you have any questions, concerns, or requests regarding your data or this Privacy Policy, please contact us at support@esamudaay.com or reach us through the app by clicking on support button,
+
+
+
+        </p>
+        <h2 class="text-2xl font-bold mb-2">Legal Compliance
+
+
+</h2>
+
+        <p class="mb-4">
+
+
+        This privacy policy is intended to comply with relevant data protection laws and regulations. However, local laws may apply, and we encourage you to consult with a legal expert if necessary.
+
+
+
+        </p>
+
+        
+
+        <p class="mb-4">
+            This privacy policy is subject to change without notice.
+        </p>
+    </div>
+</div>
 </div>
 
 

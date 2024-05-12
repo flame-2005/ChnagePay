@@ -145,10 +145,10 @@ export default function Home() {
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
   <div class="text-center font-bold mb-10">
-  <p class="inline-block text-4xl text-black">We are</p>
+  <p class="inline-block text-4xl text-black">Why choose </p>
   <span class="inline-block">&nbsp;</span>
   <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">Backed By</p>
+  <p class="inline-block text-4xl text-custom-orange">US ?</p>
 </div>
     <div class="flex flex-wrap -m-4">
       <div class="xl:w-1/3 md:w-1/2 p-4">
@@ -222,9 +222,9 @@ export default function Home() {
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581655/famous-1_c6dig6.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
+            <h1 class="title-font font-medium text-gray-900 mb-3">It integrates disparate services into one simple app tied together with an IoT lockbox to solve the “Gate-to-hand” challenge of delivering in college hostels. India has nearly 6.5M students in nearly 40K hostels spending ₹4K/month making it a $4B market annually.</h1>
+          
           </div>
         </div>
       </div>
@@ -232,11 +232,8 @@ export default function Home() {
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581654/famous3_tct86g.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-            <p class="leading-relaxed">NITK students CHANGE the way they PAY
-
-<link rel="stylesheet" href="" />Read more at: https://www.deccanherald.com/content/602201/nitk-students-change-way-they.html</p>
+            {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
+            <h1 class="title-font font-medium text-gray-900 mb-3">Five students of the National Institute of Technology – Karnataka (NITK) in Surathkal have made it possible, thanks to demonetisation, which inspired them to do something unbelievable</h1>
           </div>
         </div>
       </div>
@@ -246,7 +243,7 @@ export default function Home() {
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">What they wanna Say</h2>
             {/* <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1> */}
-            <p class="leading-relaxed">Speaking to Bangalore Mirror of their achievement, Dhyvik GJ
+            <p class="leading-relaxed">NITK students revolutionize campus life with a cutting-edge system designed to streamline transaction management. Tired of tedious processes? Say goodbye to manual paperwork and hello to effortless transactions with our innovative solution.
 </p>
           </div>
         </div>
@@ -255,9 +252,9 @@ export default function Home() {
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581644/famous4_wihrju.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
+            
           </div>
         </div>
       </div>
@@ -265,9 +262,9 @@ export default function Home() {
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581643/famous-6_nbieua.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
+            {/* <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p> */}
           </div>
         </div>
       </div>
@@ -275,9 +272,9 @@ export default function Home() {
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581643/famous-7_swbhju.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
-            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
+            {/* <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p> */}
           </div>
         </div>
       </div>

@@ -61,7 +61,7 @@ const Landing = () => {
         <h1 className='hover:text-custom-orange text-2xl font-bold mx-auto'>Seller</h1>
         <p className =  'hover:text-custom-orange text-xl ' >
 
-        Learn more about how our platform helps campus sellers.
+       Learn more about how our platform helps campus sellers.
 
         </p>
         </div>
