@@ -269,11 +269,6 @@ Delivery Options</h3>
         </div>
       </div>
     </div>
-    <button
-    style={{
-      background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
-    }}
-    class="flex mx-auto mt-16   border-0 px-8 text-white rounded-full text-lg p-2">Explore</button>
   </div>
 </section>
 <div class='text-gray-600 body-font pb-20'>
@@ -331,7 +326,7 @@ Delivery Options</h3>
   </div>
 </div>
 
-<section class="gradient-form h-full ">
+<section id='User' class="gradient-form h-full ">
   <div class="container h-full p-10 mx-auto">
     <div
       class="flex mx-auto h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">

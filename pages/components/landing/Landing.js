@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import { useInView } from 'react-intersection-observer';
 import ReactTypingEffect from 'react-typing-effect';
+import Link from 'next/link';
 
 
 const Landing = () => {
@@ -135,11 +136,12 @@ const Landing = () => {
       <p className='font-semibold text-custom-orange text-center mx-2'>
                 A unique way for students to experience entrepreneurship for students, elevating campus life for institutions. Explore button.
               </p>
-              <button 
+              <Link 
+              href={'/connect#User'}
                 className=' rounded-full mt-5 bg-custom-gradient hover:bg-custom-gradient-hover hover:text-xl text-white px-5 font-bold py-1 transition-all' 
               >
                 Explore
-              </button>
+              </Link>
       </div>
     </div>
   </div>

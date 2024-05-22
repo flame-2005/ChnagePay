@@ -77,7 +77,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="#" className="ext-l font-bold hover:bg-White rounded-full text-white  Hover:px-2 transition-all">
+              <Link href="#" className="ext-l font-bold hover:bg-White rounded-full text-white hover:px-2 transition-all">
                 About
               </Link>
             </li>
@@ -101,9 +101,9 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Link
               href="#"
-              className="inline-block mr-2 text-xs font-semibold leading-none bg-white text-blue-600 border rounded-full h-10 w-10"
+              className="hidden inline-block mr-2 text-xs font-semibold leading-none bg-transparent text-blue-600 h-10 w-10"
             >
-              <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1710566959/Group_55_x47r03.png" className='h-full w-full' alt="" />
+            
             </Link>
           </div>
         </div>

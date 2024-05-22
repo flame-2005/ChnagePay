@@ -13,6 +13,7 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+import Link from 'next/link';
 
 const business = () => {
 
@@ -83,13 +84,13 @@ const business = () => {
             <li>Earn money and certificates</li>
           </ol>
           <div className="flex justify-center">
-            <button
+            <Link href={'/connect#User'}
               style={{
                 background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)',
               }}
               className="inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg transition transform hover:scale-105">
               Get Started
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -234,9 +235,9 @@ const business = () => {
         </h1>
         <p class="mb-8 leading-relaxed text-custom-orange">Here Is the perfect Digitization Option for You</p>
         <div class="flex justify-center">
-            <button style={{
+            <Link href={'/connect#User'} style={{
           background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
-        }} class="inline-flex text-white  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
+        }} class="inline-flex text-white  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</Link>
            
         </div>
       </div>
