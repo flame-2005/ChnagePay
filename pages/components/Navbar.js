@@ -96,15 +96,15 @@ const Navbar = () => {
                 Our Tech
               </Link>
             </li>
+            <li>
+              <Link href="/connect" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+                Connect
+              </Link>
+            </li>
           </ul>
 
           <div className="hidden lg:block">
-            <Link
-              href="#"
-              className="hidden inline-block mr-2 text-xs font-semibold leading-none bg-transparent text-blue-600 h-10 w-10"
-            >
-            
-            </Link>
+          
           </div>
         </div>
 
