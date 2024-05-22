@@ -82,17 +82,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/business" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+              <Link href="/Business" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Student
               </Link>
             </li>
             <li>
-              <Link href="/business#sellers" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+              <Link href="/Business#sellers" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Sellers
               </Link>
             </li>
             <li>
-              <Link href="/business#tech" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+              <Link href="/Business#tech" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Our Tech
               </Link>
             </li>

@@ -2,7 +2,7 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 
 
-const connect = () => {
+const Connect = () => {
   const { ref: firstItemRef, inView: firstItemInView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -493,10 +493,10 @@ Our application may request to collect user images, audio and video (with explic
 </li>
             <li>Contact List Information
 <br />
-Our application may request to collect your contact list information (with explicit consent dialog, permission and purpose each time), we request permission to collect a contact when you choose to give access to import a contact from your device during placing Pikap type orders. This imports a single contact from your device and we use this contact purely for app functionality standpoint (Facilitate the Pikap type order smoothly). Please be aware that any contact submitted to our platform may be stored on our servers for future use. We don't sell or share the contact name or phone number to third parties and only for internal purposes. By uploading a contact information to our platform, you acknowledge and consent to our collection and storage of your contact.</li>
+Our application may request to collect your contact list information (with explicit consent dialog, permission and purpose each time), we request permission to collect a contact when you choose to give access to import a contact from your device during placing Pikap type orders. This imports a single contact from your device and we use this contact purely for app functionality standpoint (Facilitate the Pikap type order smoothly). Please be aware that any contact submitted to our platform may be stored on our servers for future use. We don&apos;t sell or share the contact name or phone number to third parties and only for internal purposes. By uploading a contact information to our platform, you acknowledge and consent to our collection and storage of your contact.</li>
             <li>Precise Location Information and How to Opt Out
 <br />
-When you use one of our location-enabled services (for example, when you access Services from a mobile device), we may collect and process information about your mobile device's GPS location (including the latitude, longitude or altitude of your mobile device) and the time the location information is recorded to customize the Services with location-based information and features (for example, to inform you about restaurants in your area or applicable promotions). Some of these services require your personal data for the feature to work and we may associate location data with your device ID and other information we hold about you. We keep this data for no longer than is reasonably necessary for providing services to you. If you wish to use the particular feature, you will be asked to consent to your data being used for this purpose. You can withdraw your consent at any time by disabling the GPS or other location-tracking functions on your device, provided your device allows you to do this. See your device manufacturer's instructions for further details.
+When you use one of our location-enabled services (for example, when you access Services from a mobile device), we may collect and process information about your mobile device&apos;s GPS location (including the latitude, longitude or altitude of your mobile device) and the time the location information is recorded to customize the Services with location-based information and features (for example, to inform you about restaurants in your area or applicable promotions). Some of these services require your personal data for the feature to work and we may associate location data with your device ID and other information we hold about you. We keep this data for no longer than is reasonably necessary for providing services to you. If you wish to use the particular feature, you will be asked to consent to your data being used for this purpose. You can withdraw your consent at any time by disabling the GPS or other location-tracking functions on your device, provided your device allows you to do this. See your device manufacturer&apos;s instructions for further details.
 
 </li>
         </ul>
@@ -541,7 +541,7 @@ else you can request the deletion of your data for other apps, subject to legal 
 
         <p class="mb-4">
            
-By using our app, you consent to our collection and use of your data as described in this policy. You can manage your app permissions in your device's settings.
+By using our app, you consent to our collection and use of your data as described in this policy. You can manage your app permissions in your device&apos; s settings.
 
         </p>
 
@@ -549,7 +549,7 @@ By using our app, you consent to our collection and use of your data as describe
 </h2>
 
         <p class="mb-4">
-        We may update this Privacy Policy to reflect changes in our data practices. When we do so. the "Last Updated" date will be revised. We recommend reviewing this policy periodically.
+        We may update this Privacy Policy to reflect changes in our data practices. When we do so. the &quot;Last Updated&quot; date will be revised. We recommend reviewing this policy periodically.
 
 
         </p>
@@ -592,4 +592,4 @@ If you have any questions, concerns, or requests regarding your data or this Pri
   )
 }
 
-export default connect
+export default Connect

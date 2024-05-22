@@ -15,7 +15,7 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import Link from 'next/link';
 
-const business = () => {
+const Business = () => {
 
   const { ref: firstItemRef, inView: firstItemInView } = useInView({
     triggerOnce: true,
@@ -323,4 +323,4 @@ const business = () => {
   )
 }
 
-export default business
+export default Business
