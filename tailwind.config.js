@@ -8,15 +8,21 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'custom-gradient': 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)',
+        'custom-gradient-hover': 'linear-gradient(to right, #b44593, #dd3675, #d8363a, #ee7724)',
       },
       colors: {
         custom: {
           'orange': '#FF720D',
+          'custom-gradient': 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)',
         },
+
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ['hover'],
     },
   },
   plugins: [],

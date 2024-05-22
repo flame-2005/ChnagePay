@@ -1,12 +1,63 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
+
 
 const connect = () => {
+  const { ref: firstItemRef, inView: firstItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: secontItemRef, inView: secondItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.05,
+  });
+  const { ref:  fourthItemRef, inView: fourthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: fifthItemRef, inView: fifthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: sixthItemRef, inView: sixthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref:  seventhItemRef, inView: seventhItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: eighthItemRef, inView: eighthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: ninthItemRef, inView: ninthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: tenthItemRef, inView: tenthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: eleventhItemRef, inView: eleventhItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  
+  const { ref: firstSectionRef, inView: firstSectionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: secondSectionRef, inView: secondSectionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
-    <div>
+    <div className='mt-20'>
         <p className="text-black text-center text-4xl font-bold">              Simplifying campus life with tech solution
  
  </p>
- <div className='flex item center'>
+ <div className='flex item center mt-10'>
     <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-24' alt="" />
     <div class="text-center font-bold my-auto">
   <p class="inline-block text-4xl text-black">The complete ECommerce App</p>
@@ -15,39 +66,50 @@ const connect = () => {
   <p class="inline-block text-4xl text-custom-orange">Tech Stack Solution</p>
 </div>
  </div>
- 
-        <div className='flex max-w-3xl mx-auto mt-10'>
-            
-            <div>
-                <div >
-                     <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714297758/Ellipse_64_azpkkk.png" className='border rounded-full h-52' alt="" />
-                     <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714297946/Ellipse_64_bwnijg.png" className='border rounded-full h-52 mt-5' alt="" />
-                     <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714298023/Ellipse_64_jap6p3.png" className='border rounded-full h-52 mt-5' alt="" />
-                </div>
-            </div>
-        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714296260/Group_107_p32rsb.png" className='h-svh mx-auto '  alt="" />
-        <div>
-        <div className='border-2 border-custom-orange rounded-full h-56 w-56 flex items-center justify-center flex-col'>
-    <div className=" text-center font-bold text-custom-orange">Seller Application: </div>
-    <div className='text-center p-2'> Sellers can manage 
+ <ol
+
+  class={ `md:flex md:justify-center md:gap-6  p-10 mx-auto `}>
+  {/* <!--First item--> */}
+  <li ref={firstItemRef} className={`ml-5 ${firstItemInView ? 'slide-in-right' : 'slide-out-right'}`}>
+  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714297758/Ellipse_64_azpkkk.png" className='border rounded-full h-52 mt-5 mx-auto' alt="" />
+    <div class="ms-4 mt-2 pb-5 md:ms-0">
+      <h4 class="mb-1.5 text-xl font-semibold text-custom-orange text-center">Seller Application:</h4>
+      <p class="mb-3 text-center ">
+      Sellers can manage 
 \orders, update menus 
 and prices, and offer discounts
- using this app</div>
- 
-</div>
-        <div className='border-2 border-custom-orange rounded-full h-56 w-56 flex items-center justify-center flex-col mt-5'>
-    <div className=" text-center font-bold text-custom-orange">Customer Application: </div>
-    <div className='text-center p-2'>Enjoy an intuitive interface for ordering from multiple stores and accessing a variety of student curated products</div>
- 
-</div>
-        <div className='border-2 border-custom-orange rounded-full h-56 w-56 flex items-center justify-center flex-col  mt-5'>
-    <div className=" text-center font-bold text-custom-orange">Delivery Application:  </div>
-    <div className='text-center p-2'>Facilitates easy pickup and drop-off, provides location access, and enables seamless collection of payments. </div>
- 
-</div>
+ using this app
+      </p>
+    </div>
+  </li>
 
-        </div>
-        </div>
+  {/* <!--Second item--> */}
+  <li ref={secontItemRef} className={`max-w-md ${secondItemInView ? 'slide-in-right' : 'slide-out-right'}`}>
+  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714297946/Ellipse_64_bwnijg.png" className='border rounded-full h-52 mt-5 mx-auto' alt="" />
+  <div class="flex-start flex items-center pt-2 md:block md:pt-0">
+          </div>
+    <div class="ms-4 mt-2 pb-5 md:ms-0">
+      <h4 class="mb-1.5 text-xl font-semibold text-custom-orange text-center">Customer Application:</h4>
+      <p class="mb-3 text-center ">
+      Enjoy an intuitive interface for ordering from multiple stores and
+      accessing a variety of student curated products
+      </p>
+    </div>
+  </li>
+  <li ref={secontItemRef} className={`${secondItemInView ? 'slide-in-right' : 'slide-out-right'}`}>
+  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1716351420/a5d2qw1y9ikcokusc7pq.png" className='border rounded-full h-52 mt-5 mx-auto' alt="" />
+  <div class="flex-start flex items-center pt-2 md:block md:pt-0">
+          </div>
+    <div class="ms-4 mt-2 pb-5 md:ms-0">
+      <h4 class="mb-1.5 text-xl font-semibold text-custom-orange text-center">Delivery Application:</h4>
+      <p class="mb-3 text-center ">
+      Facilitates easy pickup and drop-off, provides location access, and enables seamless  collection of payments
+      </p>
+    </div>
+  </li>
+</ol>
+ 
+   
 <div>
 
         <div className='flex item center'>
@@ -59,23 +121,23 @@ and prices, and offer discounts
   <p class="inline-block text-4xl text-custom-orange">User-Friendly IoT SmartBox. </p>
 </div>
  </div>
- <section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305919/Rectangle_36_tfpl3n.png"/>
+ <section ref={firstSectionRef} class={`text-gray-600 body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
+  <div class="container mx-auto flex px-5 md:flex-row flex-col">
+    <div class="mb-10 md:mb-0 flex justify-end">
+      <img class="object-cover object-center rounded h-96" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305919/Rectangle_36_tfpl3n.png" className=''/>
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">SmartBox/SBox is a device 
+      <h1 class="title-font sm:text-2xl text-3xl mb-4 font-medium text-gray-900">SmartBox/SBox is a device 
 We designed to 
 Enable Contactless delivery
 for
  food,gloceries and ECommers DElivery</h1>
-     <ul className='mt-24'>
-      <li className='mb-8 leading-relaxed font-bold list-disc list-item text-custom-orange text-3xl'>An IOT device  Designed  for Convenient 
+     <ul className=''>
+      <li ref={fourthItemRef} className={`mb-8 leading-relaxed font-bold list-disc list-item text-custom-orange ${fourthItemInView? 'slide-in-right' : 'slide-out-right'}`}>An IOT device  Designed  for Convenient 
 delivery of parcels </li>
-      <li className='mb-8 leading-relaxed font-bold list-disc list-item text-custom-orange text-3xl'>An IOT device  Designed  for Convenient 
+      <li ref={fifthItemRef} className={`mb-8 leading-relaxed font-bold list-disc list-item text-custom-orange ${fifthItemInView ? 'slide-in-right' : 'slide-out-right'}`}>An IOT device  Designed  for Convenient 
 delivery of parcels </li>
-      <li className='mb-8 leading-relaxed font-bold list-disc list-item text-custom-orange text-3xl'>An IOT device  Designed  for Convenient 
+      <li ref={sixthItemRef} className={`mb-8 leading-relaxed font-bold list-disc list-item text-custom-orange ${sixthItemInView ? 'slide-in-right' : 'slide-out-right'}`}>An IOT device  Designed  for Convenient 
 delivery of parcels </li>
      </ul>
    
@@ -84,7 +146,7 @@ delivery of parcels </li>
   </div>
 </section>
 </div>
-<section class="text-gray-600 body-font">
+<section class="text-gray-600 body-font mt-16">
 <div className='flex item center'>
     <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-20' alt="" />
     <div class="text-center font-bold my-auto">
@@ -97,58 +159,58 @@ delivery of parcels </li>
   <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
    
 <ol class="relative border-s border-gray-200 dark:border-gray-700 mt-20">                  
-    <li class="mb-10 ms-6">            
+    <li  class={`mb-10 ms-6 `}>            
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">Place an order on  ChangePay with SmartBox 
+        <h3 ref={seventhItemRef} class={`flex items-center mb-1 text-lg font-semibold text-gray-900 ${seventhItemInView ? 'slide-in-right' : 'slide-out-right'}`}>Place an order on  ChangePay with SmartBox 
 Delivery Options</h3>
        
         
         
     </li>
-    <li class="mb-10 ms-6">            
+    <li  class={`mb-10 ms-6 `}>            
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">Seller  accept the order</h3>
+        <h3 ref={eighthItemRef} class={`flex items-center mb-1 text-lg font-semibold text-gray-900 ${eighthItemInView ? 'slide-in-right' : 'slide-out-right'}`}>Seller  accept the order</h3>
        
         
         
     </li>
-    <li class="mb-10 ms-6">            
+    <li  class={`mb-10 ms-6 `}>            
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">  Delivery agents drop the orders in the box</h3>
+        <h3 ref={ninthItemRef} class={`flex items-center mb-1 text-lg font-semibold text-gray-900  ${ninthItemInView ? 'slide-in-right' : 'slide-out-right'}`}>  Delivery agents drop the orders in the box</h3>
        
         
         
     </li>
-    <li class="mb-10 ms-6">            
+    <li  class={`mb-10 ms-6 `}>            
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">Get notification about order being delivered to smartbox</h3>
+        <h3 ref={tenthItemRef} class={`flex items-center mb-1 text-lg font-semibold text-gray-900 dark: ${tenthItemInView ? 'slide-in-right' : 'slide-out-right'}`}>Get notification about order being delivered to smartbox</h3>
        
         
         
     </li>
-    <li class="mb-10 ms-6">            
+    <li  class={`mb-10 ms-6 `}>            
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-custom-orange dark:bg-blue-900">
             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:">Use app to open SmartBox</h3>
+        <h3 ref={eleventhItemRef} class={`flex items-center mb-1 text-lg font-semibold text-gray-900 ${eleventhItemInView ? 'slide-in-right' : 'slide-out-right'}`}>Use app to open SmartBox</h3>
        
         
         
@@ -158,16 +220,16 @@ Delivery Options</h3>
 </ol>
 
 
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 right-10 absolute">
-    <video width="640" height="360" controls>
-        <source src="https://res.cloudinary.com/dtyombve3/video/upload/v1715497586/Changepay_-_Smartbox_operation_video_yqxecc.mp4" type="video/mp4"/>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ml-20">
+    <video width="640" height="360" controls autoplay>
+    <source src="https://res.cloudinary.com/dtyombve3/video/upload/v1715497586/Changepay_-_Smartbox_operation_video_yqxecc.mp4" type="video/mp4"/>
+</video>
 
-    </video>
     </div>
   </div>
 </section>
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
+<section ref={secondSectionRef} class={`text-gray-600 body-font ${secondSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
+  <div class="container px-5 py-14 mx-auto">
   <div class="text-center font-bold mb-10">
   <p class="inline-block text-4xl text-black">Support</p>
   <span class="inline-block">&nbsp;</span>
@@ -177,7 +239,7 @@ Delivery Options</h3>
     <div class="flex flex-wrap -m-4">
     
      
-      <div class="xl:w-1/3 md:w-1/2 p-4">
+      <div class="xl:w-1/3 md:w-1/2">
         <div class="p-6 rounded-lg">
           <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
             <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712975084/Vector_xmxtn1.png" className="h-20" alt="" />
@@ -197,7 +259,7 @@ Delivery Options</h3>
           <p class="leading-relaxed text-base text-center">Receive food orders directly through our application, not via WhatsApp.</p>
         </div>
       </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
+      <div class="xl:w-1/3 md:w-1/2 ">
         <div class="p-6 rounded-lg">
           <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
             <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712975698/carbon_location_y81pl6.png" className="h-20" alt="" />
@@ -207,65 +269,70 @@ Delivery Options</h3>
         </div>
       </div>
     </div>
-    <button class="flex mx-auto mt-16  bg-custom-orange border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
+    <button
+    style={{
+      background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
+    }}
+    class="flex mx-auto mt-16   border-0 px-8 text-white rounded-full text-lg p-2">Explore</button>
   </div>
 </section>
-<div className='text-gray-600 body-font'>
-  <div class="container px-5 py-24 mx-auto">
-  <div class="text-center font-bold mb-10">
-  <p class="inline-block text-4xl text-black">Our</p>
-  <span class="inline-block">&nbsp;</span>
-  <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">Gallery</p>
-</div>
+<div class='text-gray-600 body-font pb-20'>
+  <div class="container px-5 mx-auto">
+    <div class="text-center font-bold mb-10">
+      <p class="inline-block text-4xl text-black">Our</p>
+      <span class="inline-block">&nbsp;</span>
+      <span class="inline-block">&nbsp;</span>
+      <p class="inline-block text-4xl text-custom-orange">Gallery</p>
+    </div>
   </div>
   <div class="container mx-auto px-5 py-2 lg:px-32">
-  <div class="-m-1 flex flex-wrap md:-m-2">
-    <div class="flex w-1/2 flex-wrap">
-      <div class="w-1/2 p-1 md:p-2">
-        <img
-          alt="gallery"
-          class="block h-full w-full rounded-lg object-cover object-center"
-          src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701426/Block_21_js9wsi.jpg" />
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div class="flex w-1/2 flex-wrap">
+        <div class="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-48 w-full rounded-lg object-cover object-center"
+            src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701426/Block_21_js9wsi.jpg" />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-48 w-full rounded-lg object-cover object-center"
+            src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701474/Block_13_xy1iuy.jpg" />
+        </div>
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-48 w-full rounded-lg object-cover object-center"
+            src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701507/Block_22_k9qsvt.jpg" />
+        </div>
       </div>
-      <div class="w-1/2 p-1 md:p-2">
-        <img
-          alt="gallery"
-          class="block h-full w-full rounded-lg object-cover object-center"
-          src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701474/Block_13_xy1iuy.jpg" />
-      </div>
-      <div class="w-full p-1 md:p-2">
-        <img
-          alt="gallery"
-          class="block h-full w-full rounded-lg object-cover object-center"
-          src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701507/Block_22_k9qsvt.jpg" />
-      </div>
-    </div>
-    <div class="flex w-1/2 flex-wrap">
-      <div class="w-full p-1 md:p-2">
-        <img
-          alt="gallery"
-          class="block h-full w-full rounded-lg object-cover object-center"
-          src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701524/Block_16_wjmyj6.jpg" />
-      </div>
-      <div class="w-1/2 p-1 md:p-2">
-        <img
-          alt="gallery"
-          class="block h-full w-full rounded-lg object-cover object-center"
-          src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701526/Block_15_b03byr.jpg" />
-      </div>
-      <div class="w-1/2 p-1 md:p-2">
-        <img
-          alt="gallery"
-          class="block h-full w-full rounded-lg object-cover object-center"
-          src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701530/Block1_2_ndv6lq.jpg" />
+      <div class="flex w-1/2 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-48 w-full rounded-lg object-cover object-center"
+            src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701524/Block_16_wjmyj6.jpg" />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-48 w-full rounded-lg object-cover object-center"
+            src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701526/Block_15_b03byr.jpg" />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-48 w-full rounded-lg object-cover object-center"
+            src="https://res.cloudinary.com/dtyombve3/image/upload/v1714701530/Block1_2_ndv6lq.jpg" />
+        </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-<section class="gradient-form h-full bg-neutral-200 ">
-  <div class="container h-full p-10">
+
+<section class="gradient-form h-full ">
+  <div class="container h-full p-10 mx-auto">
     <div
       class="flex mx-auto h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
       <div class="w-full">
@@ -274,7 +341,7 @@ Delivery Options</h3>
           <div class="g-0 lg:flex lg:flex-wrap">
             {/* <!-- Left column container--> */}
             <div class="px-4 md:px-0 lg:w-6/12">
-              <div class="md:mx-6 md:p-12">
+              <div class="md:mx-6">
                 {/* <!--Logo--> */}
                 <div class="text-center">
                   <img

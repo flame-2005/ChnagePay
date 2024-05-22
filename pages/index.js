@@ -4,146 +4,141 @@ import Testimonials from './components/Testimonials'
 import Faqs from './components/Faqs'
 const inter = Inter({ subsets: ["latin"] });
 import Landing from "./components/landing/Landing";
+import Review from "./components/review/Review"
+import { useState,useRef } from "react";
+import { useEffect } from "react";
+import { useInView } from 'react-intersection-observer';
+
 
 export default function Home() {
+
+  const { ref: firstSectionRef, inView: firstSectionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const { ref: secondSectionRef, inView: secondSectionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: firstItemRef, inView: firstItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const { ref: secondItemRef, inView: secondItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const { ref: thirdItemRef, inView: thirdItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1, // Adjust this value if necessary
+    rootMargin: '0px 0px -10% 0px', // Adjust the root margin to ensure it gets triggered
+  });
+  const { ref: fourthItemRef, inView: fourthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.05,
+    rootMargin: '0px 0px 20% 400px'
+  });
+
+  const { ref: fifthItemRef, inView: fifthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const { ref: sixthItemRef, inView: sixthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1, // Adjust this value if necessary
+    rootMargin: '0px 0px -10% 0px', // Adjust the root margin to ensure it gets triggered
+  });
   return (
   <>
+  
   <Landing/>
-  {/* <section class="text-gray-600 body-font">
-    <div>
-    
-    <div className="">
-      <p className="text-black text-center text-4xl font-bold">               Elevate campus living:
- 
-</p>
-<p className="text-custom-orange text-center text-4xl font-bold">Unleash local commerce across India</p>
-    </div>
-    </div>
-  <div class="container mx-auto flex md:flex-row flex-col items-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710568167/Group_2_2_jj8ukg.png"/>
-    </div>
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <ul className="flex text-xl">
-        <li className="mb-2 text-custom-orange">Student</li>
-        <li className="mx-4 mb-2" >Sellers</li>
-        <li className="mx-4 mb-2">Campasus</li>
-      </ul>
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-        <br class="hidden lg:inline-block"/>readymade gluten
-      </h1>
-      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
-        {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> */}
-      {/* </div>
-    </div>
-  </div>
-// </section> */} 
-{/* <section class="text-gray-600 body-font">
-<div className="">
-      <p className="text-black text-center text-4xl font-bold">               Where students unite to cultivate sustainable 
- 
-</p>
-<p className="text-custom-orange text-center text-4xl font-bold">campus businesses.</p>
-    </div>
-  <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-        <br class="hidden lg:inline-block"/>readymade gluten
-      </h1>
-      <p class="mb-8 leading-relaxed text-custom-orange"> 
-
-      Transform campus life with a unique entrepreneurial experience tailored for students. Our platform offers immersive challenges, mentorship, and a vibrant community, empowering students to unleash their entrepreneurial potential. Elevate your institutions impact and inspire innovation today. Click below to explore!
-
-
-
-
-
-</p>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
-        {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> */}
-      {/* </div>
-    </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710569211/Group_4_kdhqu8.png"/>
-    </div>
-  </div>
-</section> */} 
-<section class="text-gray-600 body-font">
-<div class="text-center font-bold">
-  <p class="inline-block text-4xl text-black">Our</p>
-  <span class="inline-block">&nbsp;</span>
-  <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">Presence</p>
-</div>
-
-  <div class="container px-5 py-4 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 md:w-1/3 ">
-        <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 mx-auto object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1706348568/download_1_gnhond.png" alt="blog"/>
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">National Institute of technology Karnataka</h1>
-            {/* */}
-            
+  <section className="flex items-center font-poppins mt-5">
+      <div ref={firstSectionRef} className={`justify-center flex-1 mx-auto max-w-8xl overflow-hidden lg:py-4 ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
+        <div className="text-center mb-5">
+          <div className="text-center font-bold">
+            <p className="inline-block text-4xl text-black">Our</p>
+            <span className="inline-block">&nbsp;</span>
+            <span className="inline-block">&nbsp;</span>
+            <p className="inline-block text-4xl text-custom-orange">Presence</p>
           </div>
         </div>
-      </div>
-      <div class="p-4 md:w-1/3 ">
-        <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36  mx-auto object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozHEJ9lxt8ZFVX6xhU4AbRC8dvYe_osDc8SzcjnlNbg&s" alt="blog"/>
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MIT-Manipal</h1>
-            
-            
-          </div>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3 ">
-        <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 mx-auto object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-wKWMAscw-cVOtTOs87TvVeoZp5O0-LrvWwN3azvAw&s" alt="blog"/>
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">IIM KOZHIKODE
-</h1>
-            
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-center -m-4">
-    <div class="p-4 md:w-1/3 ">
-        <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 mx-auto object-cover object-center" src="https://www.financialexpress.com/wp-content/uploads/2022/05/MAHE-logo.png" alt="blog"/>
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MAHE Manipal</h1>
-            
-            
-          </div>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3 ">
-        <div class="h-full border-4 border-custom-orange shadow-md shadow-custom-orange rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 mx-auto object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyH1NTivJQTg1zZ8GDf5MFQ2BA8MhxSZJlc4Q_fOhSzg&s" alt="blog"/>
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">One of best technical collage</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">NIT Calicut</h1>
-            
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
+        <div className="flex flex-wrap justify-center">
+
+                                <div class="w-full p-2 rounded-xl shadow-md shadow-custom-orange px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0 bg-opacity-50 backdrop-blur-3xl ">
+                                    <div class="mx-auto text-center ">
+                                        <div
+                                            class="inline-block mb-3 overflow-hidden text-xs text-white rounded-full w-44 h-44 sm:w-44 sm:h-44">
+                                            <img class="object-cover w-full h-full transition-all hover:scale-110"
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1706348568/download_1_gnhond.png" alt="" />
+                                        </div>
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">NIT Karnataka</h2>
+                                
+
+                                    </div>
+                                </div>
+                                <div class="w-full border-black p-2 rounded-xl shadow-md shadow-custom-orange px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0 bg-opacity-50 backdrop-blur-3xl ">
+                                    <div class="mx-auto text-center ">
+                                        <div
+                                            class="inline-block mb-3 overflow-hidden text-xs text-white rounded-full w-44 h-44 sm:w-44 sm:h-44">
+                                            <img class="object-cover w-full h-full transition-all hover:scale-110"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozHEJ9lxt8ZFVX6xhU4AbRC8dvYe_osDc8SzcjnlNbg&s" alt="" />
+                                        </div>
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">MIT-Manipal</h2>
+                                        {/* <span class="inline-block mb-6 text-base font-medium text-blue-500 ">MBA
+                                        </span> */}
+
+                                    </div>
+                                </div>
+                                <div class="w-full border-black p-2 rounded-xl shadow-md shadow-custom-orange px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0 bg-opacity-50 backdrop-blur-3xl ">
+                                    <div class="mx-auto text-center ">
+                                        <div
+                                            class="inline-block mb-3 overflow-hidden text-xs text-white bg-blue-700 rounded-full w-44 h-44 sm:w-44 sm:h-44">
+                                            <img class="object-cover w-full h-full transition-all hover:scale-110"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-wKWMAscw-cVOtTOs87TvVeoZp5O0-LrvWwN3azvAw&s" alt="" />
+                                        </div>
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">IIM KOZHIKODE</h2>
+                                        {/* <span class="inline-block mb-6 text-base font-medium text-blue-500 ">B Tech
+                                        </span> */}
+
+                                    </div>
+                                </div>
+                                <div class="w-full border-black p-2 rounded-xl shadow-md shadow-custom-orange px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0 bg-opacity-50 backdrop-blur-3xl " >
+                                    <div class="mx-auto text-center ">
+                                        <div
+                                            class="inline-block mb-3 overflow-hidden text-xs text-white bg-blue-700 rounded-full w-44 h-44 sm:w-44 sm:h-44">
+                                            <img class="object-cover w-full h-full transition-all hover:scale-110"
+                                                src="https://www.financialexpress.com/wp-content/uploads/2022/05/MAHE-logo.png" alt="" />
+                                        </div>
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">MAHE Manipal</h2>
+                                        {/* <span class="inline-block mb-6 text-base font-medium text-blue-500 ">B Tech
+                                        </span> */}
+
+                                    </div>
+                                </div>
+                                <div class="w-full border-black p-2 rounded-xl shadow-md shadow-custom-orange px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0 bg-opacity-50 backdrop-blur-3xl ">
+                                    <div class="mx-auto text-center ">
+                                        <div
+                                            class="inline-block mb-3 overflow-hidden text-xs text-white bg-blue-700 rounded-full w-44 h-44 sm:w-44 sm:h-44">
+                                            <img class="object-cover w-full h-full transition-all hover:scale-110"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyH1NTivJQTg1zZ8GDf5MFQ2BA8MhxSZJlc4Q_fOhSzg&" alt="" />
+                                        </div>
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">NIT Calicut</h2>
+                                        {/* <span
+                                            class="inline-block mb-6 text-base font-medium text-blue-500 ">MBBS
+                                        </span> */}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> 
+
+<section ref={secondSectionRef} class={`text-gray-600 mt-10 body-font ${secondSectionInView? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
+  <div class="container px-5 mx-auto">
   <div class="text-center font-bold mb-10">
   <p class="inline-block text-4xl text-black">Why choose </p>
   <span class="inline-block">&nbsp;</span>
@@ -209,7 +204,7 @@ export default function Home() {
     {/* <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}
   </div>
 </section>
-<section class="text-gray-600 body-font">
+<section class="text-gray-600 body-font mt-20 overflow-hidden">
   <div class="container px-5 mx-auto">
   <div class="text-center font-bold">
   <p class="inline-block text-4xl text-black mb-4">We are</p>
@@ -218,9 +213,12 @@ export default function Home() {
   <p class="inline-block text-4xl text-custom-orange">Internet Famous</p>
 </div>
     <div class="flex flex-wrap -m-4">
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div  className={`flex `}>
+
+      
+      <div ref={firstItemRef} class={`lg:w-1/3 sm:w-1/2 p-4 h-52 ${firstItemInView ? 'slide-in-right' : 'slide-out-right'} `}>
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581655/famous-1_c6dig6.png"/>
+          <img alt="gallery" class="absolute inset-0  object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1716286587/mpya2jtkdjtv7nickfqb.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
             <h1 class="title-font font-medium text-gray-900 mb-3">It integrates disparate services into one simple app tied together with an IoT lockbox to solve the “Gate-to-hand” challenge of delivering in college hostels. India has nearly 6.5M students in nearly 40K hostels spending ₹4K/month making it a $4B market annually.</h1>
@@ -228,18 +226,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div class={`lg:w-1/3 sm:w-1/2 p-4  ${secondItemInView ? 'slide-in-right' : 'slide-out-right'}`
+    } ref={secondItemRef}>
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581654/famous3_tct86g.png"/>
+          <img alt="gallery" class="absolute inset-0 h-52 mt-8 mx-auto items-center object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1716286681/os4u5qcnhcm96v9nwyu7.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
             <h1 class="title-font font-medium text-gray-900 mb-3">Five students of the National Institute of Technology – Karnataka (NITK) in Surathkal have made it possible, thanks to demonetisation, which inspired them to do something unbelievable</h1>
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div ref={thirdItemRef} class={`lg:w-1/3 sm:w-1/2 p-4 ${thirdItemInView ? 'slide-in-right' : 'slide-out-right'}`}>
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581654/famous-2_fhsy2t.png"/>
+          <img alt="gallery" class="absolute inset-0 h-52 mx-auto mt-5 object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1716286940/k9zehvd2fe96gglgkhr5.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">What they wanna Say</h2>
             {/* <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1> */}
@@ -248,32 +247,33 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
+      </div>
+      <div ref={fourthItemRef} class={`lg:w-1/3 sm:w-1/2 p-4 ${fourthItemInView ? 'slide-in-left' : 'slide-out-left'}`}>
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581644/famous4_wihrju.png"/>
+          <img alt="gallery" class="absolute inset-0 h-64 mx-auto object-cover object-center " src="https://res.cloudinary.com/dtyombve3/image/upload/v1716287225/n1vkaf2vo5szcqklonxa.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
+            <h1 class="title-font font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
             
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div ref={fifthItemRef} class={`lg:w-1/3 sm:w-1/2 p-4 ${fifthItemInView ? 'slide-in-left' : 'slide-out-left'}`}>
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581643/famous-6_nbieua.png"/>
+          <img alt="gallery" class="absolute inset-0 h-92 mx-auto object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1716287094/go4xlg2tvam4z51jg9iz.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
+            <h1 class="title-font font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
             {/* <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p> */}
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4">
+      <div ref={sixthItemRef} class={`lg:w-1/3 sm:w-1/2 p-4 ${sixthItemInView ? 'slide-in-left' : 'slide-out-left'}`}>
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710581643/famous-7_swbhju.png"/>
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/dtyombve3/image/upload/v1716287323/izb7xfahj2nsju97zzcr.png"/>
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             {/* <h2 class="tracking-widest text-sm title-font font-medium text-custom-orange mb-1">THE SUBTITLE</h2> */}
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
+            <h1 class="title-font font-medium text-gray-900 mb-3">Experience the game-changing innovation from NITK students, reshaping the landscape of campus operations. Our dynamic system redefines transaction management, offering a seamless, user-friendly solution that empowers students and administrators alike. </h1>
             {/* <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p> */}
           </div>
         </div>
@@ -281,7 +281,8 @@ export default function Home() {
     </div>
   </div>
 </section>
-<Testimonials/>
+{/* <Testimonials/> */}
+<Review/>
 <Faqs/>
   </>
   );

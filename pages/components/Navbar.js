@@ -1,6 +1,7 @@
 // components/Navbar.js
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { useRef } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -15,18 +16,41 @@ const Navbar = () => {
       document.head.removeChild(script);
     };
   }, []);
+  
+  const [isVisible, setIsVisible] = useState(true);
+  const prevScrollPos = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+      const isScrolledUp = prevScrollPos.current > currentScrollPos || currentScrollPos === 0;
+      setIsVisible(isScrolledUp);
+      prevScrollPos.current = currentScrollPos;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <section className="shadow-lg font-poppins w-full sticky top-0 bg-custom-orange z-20">
-      <div className=" px-4 mx-auto bg-custom-orange" x-data="{open:false}">
-        <div className="relative flex items-center bg-custom-orange justify-between py-2">
+    <section className={`shadow-xl z-40 shadow-purple-200 font-poppins w-full sticky top-0z-20 navbar ${isVisible ? 'visible' : ''}`}>
+      <div className=" px-4 mx-auto "
+        style={{
+          background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
+        }} x-data="{open:false}">
+        <div className="relative  flex items-center justify-between py-2"
+          style={{
+            background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
+          }}>
           <a href="#" className="text-3xl font-semibold leading-none text-white">
             <h1>Logo</h1>
           </a>
 
           <div className="lg:hidden">
             <button
-              className="flex items-center px-3 py-2 border border-blue-200 rounded text-white navbar-burger hover:text-blue-800 hover:border-blue-300 lg:hidden"
+              className="flex items-center px-3 py-2 border rounded text-white navbar-burger lg:hidden"
               onClick={() => setOpen(true)}
             >
               <svg
@@ -47,60 +71,56 @@ const Navbar = () => {
 
           <ul className="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex">
             <li>
-              <Link href="#" className="text-l font-bold text-white hover:text-blue-700">
-                Home
+              <Link href="/" className="text-l font-bold hover:bg-White rounded-full text-white hover:px-2 transition-all">
+                <p className=' rounded-full w-full h-full'
+              >Home</p>
               </Link>
             </li>
             <li>
-              <Link href="#"className="text-l font-bold text-white hover:text-blue-700">
+              <Link href="#" className="ext-l font-bold hover:bg-White rounded-full text-white  Hover:px-2 transition-all">
                 About
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-l font-bold text-white hover:text-blue-700">
-                Connect
+              <Link href="/business" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+                Student
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-l font-bold text-white hover:text-blue-700">
-                Boxes
+              <Link href="/business#sellers" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+                Sellers
               </Link>
             </li>
             <li>
-              <Link href="/#contact" className="text-l font-bold  text-white hover:text-blue-700">
-                Contact Us
+              <Link href="/business#tech" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+                Our Tech
               </Link>
             </li>
-            
           </ul>
 
           <div className="hidden lg:block">
             <Link
               href="#"
-              className="inline-block mr-2 text-xs font-semibold leading-none bg-white text-blue-600 border border-blue-200 rounded-full hover:border-blue-300 h-10 w-10"
+              className="inline-block mr-2 text-xs font-semibold leading-none bg-white text-blue-600 border rounded-full h-10 w-10"
             >
               <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1710566959/Group_55_x47r03.png" className='h-full w-full' alt="" />
-              
             </Link>
-           
           </div>
         </div>
 
         {/* Mobile Sidebar */}
         <div
-          className={`fixed inset-0 w-full bg-gray-900 opacity-25 lg:hidden ${open ? 'translate-x-0 ease-in-opacity-100' : '-translate-x-full ease-out opacity-0'
-            }`}
+          className={`fixed inset-0 w-full bg-gray-900 opacity-25 lg:hidden ${open ? 'translate-x-0 ease-in-opacity-100' : '-translate-x-full ease-out opacity-0'}`}
         ></div>
 
         <div
-          className={`absolute inset-0 z-10 h-screen p-3 text-white duration-500 transform bg-gray-100 w-80 lg:hidden lg:transform-none lg:relative ${open ? 'translate-x-0 ease-in-opacity-100' : '-translate-x-full ease-out opacity-0'
-            }`}
+          className={`absolute inset-0 z-10 h-screen p-3 text-white duration-500 transform bg-gray-100 w-80 lg:hidden lg:transform-none lg:relative ${open ? 'translate-x-0 ease-in-opacity-100' : '-translate-x-full ease-out opacity-0'}`}
         >
           <div className="flex justify-between lg:flex">
             <a className="p-2 text-2xl font-bold text-white" href="#">
             </a>
             <button
-              className="p-2 text-white rounded-md hover:text-blue-300 lg:hidden"
+              className="p-2 text-white rounded-md lg:hidden"
               onClick={() => setOpen(false)}
             >
               <svg
@@ -119,43 +139,27 @@ const Navbar = () => {
             </button>
           </div>
           <ul className="px-4 text-left mt-7">
-            <li class="pb-3">
-              <Link href="/" onClick={() => setOpen(false)} class="text-sm text-white hover:text-blue-400">
+            <li className="pb-3">
+              <Link href="/" onClick={() => setOpen(false)} className="text-sm text-white">
                 Home
               </Link>
             </li>
-            <li class="pb-3">
-              <Link href="/#about" onClick={() => setOpen(false)} class="text-sm text-white hover:text-blue-400">
+            <li className="pb-3">
+              <Link href="/#about" onClick={() => setOpen(false)} className="text-sm text-white">
                 About us
               </Link>
             </li>
-            <li class="pb-3">
-              <Link href="/#contact" onClick={() => setOpen(false)} class="text-sm text-white hover:text-blue-400">
+            <li className="pb-3">
+              <Link href="/#contact" onClick={() => setOpen(false)} className="text-sm text-white">
                 Contact Us
               </Link>
             </li>
-            <li class="pb-3">
-              <Link href="/blogs" onClick={() => setOpen(false)} class="text-sm text-white hover:text-blue-400">
+            <li className="pb-3">
+              <Link href="/blogs" onClick={() => setOpen(false)} className="text-sm text-white">
                 Blog
               </Link>
             </li>
-            <li class="pb-3">
-              <Link href="/percentilepredictor" onClick={() => setOpen(false)} class="text-sm text-white hover:text-blue-400">
-                Rank Predictor
-              </Link>
-            </li>
           </ul>
-          {/* <div class="block mt-5 lg:hidden">
-            <a
-              href="#"
-              class="inline-block w-full px-4 py-3 mb-4 mr-2 text-xs font-semibold leading-none text-center text-blue-600 border border-blue-400 rounded hover:border-blue-300"
-            >
-              Log In
-            </a>
-            <a href="#" class="inline-block w-full px-4 py-3 mr-2 text-xs font-semibold leading-none text-center text-gray-100 rounded bg-blue-800">
-              Sign Up
-            </a>
-          </div> */}
         </div>
       </div>
     </section>

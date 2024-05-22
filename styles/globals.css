@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url('https://res.cloudinary.com/dtyombve3/image/upload/v1716096947/Vector_40_pmbjoq.png');
+  background-repeat: no-repeat;
+  background-size: contain; /* Cover the entire screen */
+  background-attachment: fixed; /* Fixed at its position */
+  background-position: center; /* Center the background */
+}
+.custom-gradient {
+  @apply bg-gradient-to-r from-[#ee7724] via-[#d8363a] to-[#b44593];
+}
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -9,9 +23,7 @@
   
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
+    font-size: 18px;  
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
@@ -45,6 +57,78 @@
     animation: rotateAnimation 5s linear infinite; /* Apply the animation */
     transform-origin: 50% 150px; /* Set the rotation point (X, Y) */
   }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: -80px; /* initially hidden */
+    width: 100%;
+    transition: top 0.3s;
+  }
+  
+  .navbar.visible {
+    top: 0;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .swiper1 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide1 {
+    text-align: center;
+    font-size: 18px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Example with animate.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Example with custom keyframes */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate__slideInLeft {
+  animation: slideInLeft 1s forwards; /* Adjust animation duration as needed */
+}
+
   
   @keyframes rotateAnimation {
     0% {
@@ -55,3 +139,58 @@
     }
   }
   
+
+  /* Example with animate.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Example with custom keyframes */
+@keyframes bounceInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate__bounceInUp {
+  animation: bounceInUp 1s forwards; /* Adjust animation duration as needed */
+}
+/* styles.css or your global CSS file */
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+/* styles.css or your global CSS file */
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-out-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+} 
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-out-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+

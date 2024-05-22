@@ -1,5 +1,8 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import ReactTypingEffect from 'react-typing-effect';
+import { useInView } from 'react-intersection-observer';
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,56 +15,96 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 
 const business = () => {
+
+  const { ref: firstItemRef, inView: firstItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+    rootMargin: '0px 0px 10% 10%'
+  });
+  const { ref: firstSectionRef, inView: firstSectionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: secondSectionRef, inView: secondSectionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: fourthItemRef, inView: fourthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.05,
+    rootMargin: '0px 0px 20% 400px'
+  });
+  const { ref: fifthItemRef, inView: fifthItemInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.05,
+    rootMargin: '0px 0px 20% 400px'
+  });
   return (
     <div>
-      <section class="text-gray-600 body-font">
-    <div>
-    
-    <div className="">
-      <p className="text-black text-center text-4xl font-bold">               Run a Business on Campus, 
-
- 
-</p>
-<p className="text-custom-orange text-center text-4xl font-bold">and Shape Your Entrepreneurial Future!</p>
-    </div>
-    </div>
-  <div class="container mx-auto flex md:flex-row flex-col items-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1710569211/Group_4_kdhqu8.png"/>
-    </div>
-    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      {/* <ul className="flex text-xl">
-        <li className="mb-2 text-custom-orange">Student</li>
-        <li className="mx-4 mb-2" >Sellers</li>
-        <li className="mx-4 mb-2">Campasus</li>
-      </ul> */}
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Discover the Benefits of Student 
-        <br class="lg:inline-block text-custom-orange"/>Entrepreneurship!
-      </h1>
-      {/* <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p> */}
-      <ol className='text-xl text-custom-orange my-5'>
-        <li>1. Learn about the platform
-</li>
-        <li>2. Establish and Run Operations
-
-</li>
-<li>
-  3. Earn money and certificates.
-</li>
-      </ol>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
-        {/* <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> */}
+      <section className="text-gray-600 body-font mt-20">
+      <div className="text-center mb-10">
+        <p className="text-black text-4xl font-bold">
+          Run a Business on Campus,
+        </p>
+        <div className="text-custom-orange text-4xl font-bold">
+        and Shape Your Entrepreneurial Future!
+          {/* <ReactTypingEffect
+        text="and Shape Your Entrepreneurial Future!"
+        speed={50}
+        eraseSpeed={20}
+        eraseDelay={5000}
+      /> */}
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div className="container mx-auto -top-10 relative flex md:flex-row flex-col justify-center items-center">
+        <div ref={firstItemRef} className={` mb-10 md:mb-0 ${firstItemInView ? 'slide-in-left' : 'slide-out-left'}`}>
+          <img
+            className="object-cover h-96 mx-auto  object-center rounded"
+            alt="hero"
+            src="https://res.cloudinary.com/dtyombve3/image/upload/v1710569211/Group_4_kdhqu8.png"
+          />
+        </div>
+        <div  className={`lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center `}>
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            Discover the Benefits of Student
+            <br className="lg:inline-block" />
+            <div className="text-custom-orange text-5xl">
+            <ReactTypingEffect
+        text="Entrepreneurship!"
+        speed={50}
+        eraseSpeed={20}
+        eraseDelay={5000}
+      />
+            </div>
+          </h1>
+          <ol className="text-xl text-custom-orange my-5 list-decimal list-inside">
+            <li>Learn about the platform</li>
+            <li>Establish and Run Operations</li>
+            <li>Earn money and certificates</li>
+          </ol>
+          <div className="flex justify-center">
+            <button
+              style={{
+                background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)',
+              }}
+              className="inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg transition transform hover:scale-105">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 {/* <!-- component --> */}
-<div className="">
-      <p className="text-black text-center text-4xl font-bold">               Student Enterpreneurial role: How Does It Work?
+<div>
+    
 
- 
-</p>
+      <div class="text-center font-bold mb-10">
+  <p class="inline-block text-4xl text-black">Student Enterpreneurial role:</p>
+  <span class="inline-block">&nbsp;</span>
+  <span class="inline-block">&nbsp;</span>
+  <p class="inline-block text-4xl text-custom-orange">How Does It Work?</p>
+</div>
+
 <p className="text-custom-orange text-center text-4xl font-bold"></p>
     </div>
 <Swiper
@@ -73,42 +116,58 @@ const business = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper mt-10"
+        className={`mySwiper mt-10 `}
       >
         
-        <SwiperSlide>
-          <section class="text-gray-600 body-font flex items-center justify-center ">   
-  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714191393/Group_68_c7k8zn.png" className='h-dvh'  alt=""/>
-</section>
-</SwiperSlide>
-        <SwiperSlide><section class="text-gray-600 body-font flex items-center justify-center">
-  
-  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194076/Group_63_jjsmzl.png" className='h-dvh' alt="" />
+<SwiperSlide style={{ background: 'transparent' }}>
+    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+      <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
+        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714191393/Group_68_c7k8zn.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
+      </div>
+    </section>
+  </SwiperSlide>
+<SwiperSlide style={{ background: 'transparent' }}>
+    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+      <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
+        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194076/Group_63_jjsmzl.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
+      </div>
+    </section>
+  </SwiperSlide>
+<SwiperSlide style={{ background: 'transparent' }}>
+    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+      <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
+        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194385/Group_64_a6tx9e.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
+      </div>
+    </section>
+  </SwiperSlide>
+<SwiperSlide style={{ background: 'transparent' }}>
+    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+      <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
+        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714195140/Group_105_qfxn14.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
+      </div>
+    </section>
+  </SwiperSlide>
+<SwiperSlide style={{ background: 'transparent' }}>
+    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+      <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
+        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714195239/Group_106_thn8xp.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
+      </div>
+    </section>
+  </SwiperSlide>
+<SwiperSlide style={{ background: 'transparent' }}>
+    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+      <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
+        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194495/Group_102_mvmgxs.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
+      </div>
+    </section>
+  </SwiperSlide>
 
-</section></SwiperSlide>
-        <SwiperSlide><section class="text-gray-600 body-font flex items-center justify-center">
-  
-  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194385/Group_64_a6tx9e.png" className='h-lvh' alt="" />
-
-</section></SwiperSlide>
-        <SwiperSlide><section class="text-gray-600 body-font flex items-center justify-center">
-  
-  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714195140/Group_105_qfxn14.png" className='h-lvh' alt="" />
-
-</section></SwiperSlide>
-        <SwiperSlide><section class="text-gray-600 body-font flex items-center justify-center">
-  
-  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714195239/Group_106_thn8xp.png" className='h-lvh' alt="" />
-
-</section></SwiperSlide>
-        <SwiperSlide><section class="text-gray-600 body-font flex items-center justify-center">
-  
-  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194495/Group_102_mvmgxs.png" className='h-lvh' alt="" />
-
-</section></SwiperSlide>
+    
+    
+ 
         
       </Swiper>
-<section class="text-gray-600 body-font">
+<section ref={firstSectionRef} class={`text-gray-600 body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`} id='tech'>
   <div class="container px-5 py-24 mx-auto">
   <div class="text-center font-bold mb-10">
   <p class="inline-block text-4xl text-black">Explore</p>
@@ -116,7 +175,7 @@ const business = () => {
   <span class="inline-block">&nbsp;</span>
   <p class="inline-block text-4xl text-custom-orange">The Tech</p>
 </div>
-    <div class="flex flex-wrap -m-4">
+    <div class="flex flex-wrap -m-4" >
     
      
       <div class="xl:w-1/3 md:w-1/2 p-4">
@@ -154,7 +213,7 @@ const business = () => {
     <div>
    
    
-    <div class="text-center font-bold mb-10">
+    <div class="text-center font-bold mb-10" id='sellers'>
   <p class="inline-block text-4xl text-black">Campus Commers</p>
   <span class="inline-block">&nbsp;</span>
   <span class="inline-block">&nbsp;</span>
@@ -164,18 +223,20 @@ const business = () => {
     </div>
     <div class="container w-full mx-auto flex justify-center">
     <div class="flex items-center text-center">
-      <div>
+      <div ref={fourthItemRef} className={`${fourthItemInView ? 'slide-in-left' : 'slide-out-left'}`}>
 
         <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1715498249/Group_66_iabzlb.png" class='h-80' alt=""/>
       </div>
-      <div>
+      <div ref={fifthItemRef} className={`${fifthItemInView ? 'slide-in-right' : 'slide-out-right'}`}>
         
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Do You have Business inside or 
             <br class="hidden lg:inline-block"/>vicinity of The Campus 
         </h1>
         <p class="mb-8 leading-relaxed text-custom-orange">Here Is the perfect Digitization Option for You</p>
         <div class="flex justify-center">
-            <button class="inline-flex text-white bg-custom-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
+            <button style={{
+          background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
+        }} class="inline-flex text-white  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</button>
            
         </div>
       </div>
@@ -185,7 +246,7 @@ const business = () => {
 
 </section>
 
-<section class="text-gray-600 body-font">
+<section ref={secondSectionRef} class={`text-gray-600 body-font ${secondSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
   <div class="container px-5 py-24 mx-auto">
   <div class="text-center font-bold mb-10">
   <p class="inline-block text-4xl text-black">Our</p>
@@ -255,7 +316,6 @@ const business = () => {
        
 
     </div>
-    <button class="flex mx-auto mt-16 text-white bg-custom-orange border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Button</button>
   </div>
 </section>
     </div>
