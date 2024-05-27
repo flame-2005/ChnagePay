@@ -53,7 +53,7 @@ const Connect = () => {
     threshold: 0.2,
   });
   return (
-    <div className='mt-20'>
+    <div className='mt-20 overflow-hidden'>
         <p className="text-black text-center text-4xl font-bold">              Simplifying campus life with tech solution
  
  </p>
@@ -110,7 +110,7 @@ and prices, and offer discounts
 </ol>
  
    
-<div>
+<div className='overflow-hidden'>
 
         <div className='flex item center ml-10'>
     <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-16' alt="" />
@@ -121,7 +121,7 @@ and prices, and offer discounts
   <p class="inline-block text-4xl text-custom-orange">User-Friendly IoT SmartBox. </p>
 </div>
  </div>
- <section ref={firstSectionRef} class={`text-gray-600  body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
+ <section ref={firstSectionRef} class={ `text-gray-600  body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
   <div class="container mx-auto flex px-5 md:flex-row flex-col">
     <div class="mb-10 md:mb-0 flex justify-end">
       <img class="object-cover object-center ml-10 rounded h-96" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305919/Rectangle_36_tfpl3n.png" className='h-96'/>
@@ -146,7 +146,7 @@ delivery of parcels </li>
   </div>
 </section>
 </div>
-<section class="text-gray-600 body-font mt-16">
+<section class="overflow-hidden text-gray-600 body-font mt-16">
 <div className='flex item center ml-10'>
     <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-16' alt="" />
     <div class="text-center font-bold my-auto">
