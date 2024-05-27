@@ -121,10 +121,10 @@ and prices, and offer discounts
   <p class="inline-block text-4xl text-custom-orange">User-Friendly IoT SmartBox. </p>
 </div>
  </div>
- <section ref={firstSectionRef} class={`text-gray-600 body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
+ <section ref={firstSectionRef} class={`text-gray-600  body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
   <div class="container mx-auto flex px-5 md:flex-row flex-col">
     <div class="mb-10 md:mb-0 flex justify-end">
-      <img class="object-cover object-center rounded h-96" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305919/Rectangle_36_tfpl3n.png" className='h-96'/>
+      <img class="object-cover object-center ml-10 rounded h-96" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305919/Rectangle_36_tfpl3n.png" className='h-96'/>
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left text-center">
       <h1 class="title-font sm:text-2xl text-3xl mb-4 font-medium text-gray-900">SmartBox/SBox is a device 
@@ -156,7 +156,7 @@ delivery of parcels </li>
   {/* <p class="inline-block text-4xl text-custom-orange">User-Friendly IoT SmartBox. </p> */}
 </div>
  </div>
-  <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
+  <div class="ml-10 container mx-auto flex px-5 md:flex-row flex-col items-center">
    
 <ol class="relative border-s border-gray-200 dark:border-gray-700 mt-20">                  
     <li  class={`mb-10 ms-6 `}>            
