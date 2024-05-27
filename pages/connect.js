@@ -57,8 +57,8 @@ const Connect = () => {
         <p className="text-black text-center text-4xl font-bold">              Simplifying campus life with tech solution
  
  </p>
- <div className='flex item center mt-10'>
-    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-24' alt="" />
+ <div className='flex item center mt-10 ml-10'>
+    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-16' alt="" />
     <div class="text-center font-bold my-auto">
   <p class="inline-block text-4xl text-black">The complete ECommerce App</p>
   <span class="inline-block">&nbsp;</span>
@@ -112,8 +112,8 @@ and prices, and offer discounts
    
 <div>
 
-        <div className='flex item center'>
-    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-24' alt="" />
+        <div className='flex item center ml-10'>
+    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-16' alt="" />
     <div class="text-center font-bold my-auto">
   <p class="inline-block text-4xl text-black">Introducing a Cutting-Edge and </p>
   <span class="inline-block">&nbsp;</span>
@@ -124,7 +124,7 @@ and prices, and offer discounts
  <section ref={firstSectionRef} class={`text-gray-600 body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
   <div class="container mx-auto flex px-5 md:flex-row flex-col">
     <div class="mb-10 md:mb-0 flex justify-end">
-      <img class="object-cover object-center rounded h-96" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305919/Rectangle_36_tfpl3n.png" className=''/>
+      <img class="object-cover object-center rounded h-96" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305919/Rectangle_36_tfpl3n.png" className='h-96'/>
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left text-center">
       <h1 class="title-font sm:text-2xl text-3xl mb-4 font-medium text-gray-900">SmartBox/SBox is a device 
@@ -147,8 +147,8 @@ delivery of parcels </li>
 </section>
 </div>
 <section class="text-gray-600 body-font mt-16">
-<div className='flex item center'>
-    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-20' alt="" />
+<div className='flex item center ml-10'>
+    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305416/bxs_up-arrow_lzl8uu.png" className='h-16' alt="" />
     <div class="text-center font-bold my-auto">
   <p class="inline-block text-4xl text-black">How does SmartBox Works </p>
   <span class="inline-block">&nbsp;</span>
@@ -459,7 +459,7 @@ Delivery Options</h3>
     </div>
   </div>
 </section>
-<div class="bg-gray-100">
+{/* <div class="bg-gray-100">
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold mb-4">Changepay Privacy Policy
 </h1>
@@ -585,7 +585,7 @@ If you have any questions, concerns, or requests regarding your data or this Pri
             This privacy policy is subject to change without notice.
         </p>
     </div>
-</div>
+</div> */}
 </div>
 
 

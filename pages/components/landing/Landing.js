@@ -96,7 +96,6 @@ const Landing = () => {
                 style={{ top: positionT, right: positionL, transform: `rotate(${positionA}deg)` }} 
                 src="https://res.cloudinary.com/dtyombve3/image/upload/f_auto,q_auto/vw4lxwfgynh7e6ecad1t" 
                 alt="Arrow" 
-                loading="lazy" 
               />
               
             </div>
@@ -105,7 +104,7 @@ const Landing = () => {
             className='h-[500px] -left-24 relative transition-all ' 
             src={image} 
             alt="Main visual" 
-            loading="lazy" 
+        
           />
         </div>
       </section>
@@ -128,7 +127,7 @@ const Landing = () => {
       src="https://res.cloudinary.com/dtyombve3/image/upload/v1714183227/Group_70_fgiz6x.png" 
       className='h-[600px] -z-10' 
       alt="Background" 
-      loading="lazy" 
+  
     />
        </Parallax>
     <div className='absolute inset-0 flex items-center justify-center'>

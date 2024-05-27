@@ -9,7 +9,10 @@ npm i
 
 npm install swiper
 
+yarn run dev
+
 npm run dev
+
 # or
 yarn dev
 # or

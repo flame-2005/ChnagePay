@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <section className={`shadow-xl z-40 shadow-purple-200 font-poppins w-full sticky top-0z-20 navbar ${isVisible ? 'visible' : ''}`}>
-      <div className=" px-4 mx-auto "
+      <div className=" px-6 py-1 mx-auto "
         style={{
           background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
         }} x-data="{open:false}">
@@ -97,7 +97,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/connect" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+              <Link href="/Connect" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Connect
               </Link>
             </li>
