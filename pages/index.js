@@ -33,12 +33,12 @@ export default function Home() {
 
   const { ref: thirdItemRef, inView: thirdItemInView } = useInView({
     triggerOnce: true,
-    threshold: 0.1, // Adjust this value if necessary
+    threshold: 0.0001, // Adjust this value if necessary
     rootMargin: '0px 0px -10% 0px', // Adjust the root margin to ensure it gets triggered
   });
   const { ref: fourthItemRef, inView: fourthItemInView } = useInView({
     triggerOnce: true,
-    threshold: 0.05,
+    threshold: 0.0001,
     rootMargin: '0px 0px 20% 400px'
   });
 
