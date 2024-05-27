@@ -123,7 +123,7 @@ and prices, and offer discounts
  </div>
  <section ref={firstSectionRef} class={ `text-gray-600  body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
   <div class="container mx-auto flex px-5 md:flex-row flex-col">
-    <div class="ml-20 mb-10 md:mb-0 flex justify-end">
+    <div class="ml-16 mb-10 md:mb-0 flex justify-end">
       <img class="object-cover object-center rounded h-96" alt="hero" src="https://res.cloudinary.com/dtyombve3/image/upload/v1714305919/Rectangle_36_tfpl3n.png" className='h-96'/>
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left text-center">
