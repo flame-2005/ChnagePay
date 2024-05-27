@@ -156,7 +156,7 @@ delivery of parcels </li>
   {/* <p class="inline-block text-4xl text-custom-orange">User-Friendly IoT SmartBox. </p> */}
 </div>
  </div>
-  <div class="ml-10 container mx-auto flex px-5 md:flex-row flex-col items-center">
+  <div class="ml-16 container mx-auto flex px-5 md:flex-row flex-col items-center">
    
 <ol class="relative border-s border-gray-200 dark:border-gray-700 mt-20">                  
     <li  class={`mb-10 ms-6 `}>            
