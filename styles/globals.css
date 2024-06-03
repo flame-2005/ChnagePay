@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&family=Orelega+One&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Urbanist', sans-serif;
+  }
+}
 
 *{
   scroll-behavior: smooth;
@@ -193,4 +202,31 @@ body {
 }
 
 
+.App {
+  text-align: center;
+  padding: 50px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.message-display {
+
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0);
+  animation: expand 0.3s forwards;
+}
+
+@keyframes expand {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 

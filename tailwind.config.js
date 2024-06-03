@@ -18,6 +18,10 @@ module.exports = {
         },
 
       },
+      fontFamily: {
+        urbanist: ['Urbanist', 'sans-serif'],
+        orelega: ['Orelega One', 'cursive'],
+      },
     },
   },
   variants: {

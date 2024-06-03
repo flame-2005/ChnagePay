@@ -12,6 +12,8 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
 
+
+
   const { ref: firstSectionRef, inView: firstSectionInView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -33,7 +35,7 @@ export default function Home() {
 
   const { ref: thirdItemRef, inView: thirdItemInView } = useInView({
     triggerOnce: true,
-    threshold: 0.0001, // Adjust this value if necessary
+    threshold: 0.0005, // Adjust this value if necessary
     rootMargin: '0px 0px -10% 0px', // Adjust the root margin to ensure it gets triggered
   });
   const { ref: fourthItemRef, inView: fourthItemInView } = useInView({
@@ -52,6 +54,14 @@ export default function Home() {
     threshold: 0.1, // Adjust this value if necessary
     rootMargin: '0px 0px -10% 0px', // Adjust the root margin to ensure it gets triggered
   });
+
+  const handleButtonClick = (msg) => {
+    setVisible(false); // Hide the current message immediately
+    setTimeout(() => {
+      setMessage(msg);
+      setVisible(true); // Show the new message after a delay
+    }, 300); // Delay to match the animation duration
+  };
   return (
   <>
   

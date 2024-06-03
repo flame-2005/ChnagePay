@@ -84,7 +84,7 @@ const Business = () => {
             <li>Earn money and certificates</li>
           </ol>
           <div className="flex justify-center">
-            <Link href={'/connect#User'}
+            <Link href={'/components/Connect#User'}
               style={{
                 background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)',
               }}
@@ -235,7 +235,7 @@ const Business = () => {
         </h1>
         <p class="mb-8 leading-relaxed text-custom-orange">Here Is the perfect Digitization Option for You</p>
         <div class="flex justify-center">
-            <Link href={'/connect#User'} style={{
+            <Link href={'/components/Connect#User'} style={{
           background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
         }} class="inline-flex text-white  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</Link>
            

@@ -92,15 +92,15 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/components/Business#tech" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+              <Link href="/components/Connect" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Our Tech
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/components/Connect" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Connect
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <div className="hidden lg:block">
