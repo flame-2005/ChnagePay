@@ -36,17 +36,17 @@ const Navbar = () => {
 
   return (
     <section className={`shadow-xl z-40 shadow-purple-200 font-poppins w-full sticky top-0z-20 navbar ${isVisible ? 'visible' : ''}`}>
-      <div className=" px-6 py-1 mx-auto "
+      <div className=" px-6 mx-auto "
         style={{
           background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
         }} x-data="{open:false}">
-        <div className="relative  flex items-center justify-between py-2"
+        <div className="relative  flex items-center justify-between "
           style={{
             background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
           }}>
-          <a href="#" className="text-3xl font-semibold leading-none text-white">
-            <h1>Logo</h1>
-          </a>
+          
+            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1717508456/zstx6zqrr1eecgg4jkxm.png" alt="" className='h-12' />
+        
 
           <div className="lg:hidden">
             <button
