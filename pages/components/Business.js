@@ -42,7 +42,7 @@ const Business = () => {
   });
   return (
     <div>
-      <section className="text-gray-600 body-font mt-20">
+      <section className="text-gray-600 body-font mt-24">
       <div className="text-center mb-10">
         <p className="text-black text-4xl font-bold">
           Run a Business on Campus,
@@ -99,11 +99,11 @@ const Business = () => {
 <div>
     
 
-      <div class="text-center font-bold mb-10">
-  <p class="inline-block text-4xl text-black">Student Enterpreneurial role:</p>
-  <span class="inline-block">&nbsp;</span>
-  <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">How Does It Work?</p>
+      <div className="text-center font-bold mb-10">
+  <p className="inline-block text-4xl text-black">Student Enterpreneurial role:</p>
+  <span className="inline-block">&nbsp;</span>
+  <span className="inline-block">&nbsp;</span>
+  <p className="inline-block text-4xl text-custom-orange">How Does It Work?</p>
 </div>
 
 <p className="text-custom-orange text-center text-4xl font-bold"></p>
@@ -121,42 +121,42 @@ const Business = () => {
       >
         
 <SwiperSlide style={{ background: 'transparent' }}>
-    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+    <section className="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
       <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
         <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714191393/Group_68_c7k8zn.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
       </div>
     </section>
   </SwiperSlide>
 <SwiperSlide style={{ background: 'transparent' }}>
-    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+    <section className="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
       <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
         <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194076/Group_63_jjsmzl.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
       </div>
     </section>
   </SwiperSlide>
 <SwiperSlide style={{ background: 'transparent' }}>
-    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+    <section className="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
       <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
         <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194385/Group_64_a6tx9e.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
       </div>
     </section>
   </SwiperSlide>
 <SwiperSlide style={{ background: 'transparent' }}>
-    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+    <section className="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
       <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
         <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714195140/Group_105_qfxn14.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
       </div>
     </section>
   </SwiperSlide>
 <SwiperSlide style={{ background: 'transparent' }}>
-    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+    <section className="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
       <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
         <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714195239/Group_106_thn8xp.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
       </div>
     </section>
   </SwiperSlide>
 <SwiperSlide style={{ background: 'transparent' }}>
-    <section class="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
+    <section className="text-gray-600 body-font flex items-center justify-center onset-0 bg-opacity-50 backdrop-blur-2xl">
       <div style={{ maxWidth: '50%', maxHeight: '50%' }}>
         <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714194495/Group_102_mvmgxs.png" className='h-dvh' style={{ width: '100%', height: 'auto' }} alt=""/>
       </div>
@@ -168,76 +168,76 @@ const Business = () => {
  
         
       </Swiper>
-<section ref={firstSectionRef} class={`text-gray-600 body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`} id='tech'>
-  <div class="container px-5 py-24 mx-auto">
-  <div class="text-center font-bold mb-10">
-  <p class="inline-block text-4xl text-black">Explore</p>
-  <span class="inline-block">&nbsp;</span>
-  <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">The Tech</p>
+<section ref={firstSectionRef} className={`text-gray-600 body-font ${firstSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`} id='tech'>
+  <div className="container px-5 py-24 mx-auto">
+  <div className="text-center font-bold mb-10">
+  <p className="inline-block text-4xl text-black">Explore</p>
+  <span className="inline-block">&nbsp;</span>
+  <span className="inline-block">&nbsp;</span>
+  <p className="inline-block text-4xl text-custom-orange">The Tech</p>
 </div>
-    <div class="flex flex-wrap -m-4" >
+    <div className="flex flex-wrap -m-4" >
     
      
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+      <div className="xl:w-1/3 md:w-1/2 p-4">
+        <div className="p-6">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
             <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712973875/mdi_human-male-board-poll_mh5clz.png" className="h-20" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Seller</h2>
-          <p class="leading-relaxed text-base text-center">Hostel deliveries, Curated student discounts and coupons</p>
+          <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Seller</h2>
+          <p className="leading-relaxed text-base text-center">Hostel deliveries, Curated student discounts and coupons</p>
         </div>
       </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+      <div className="xl:w-1/3 md:w-1/2 p-4">
+        <div className="p-6">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
             <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712973875/ic_baseline-delivery-dining_quo1lg.png" className="h-20" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Delivery</h2>
-          <p class="leading-relaxed text-base text-center">All in one app for your campus for - Personalized engagements</p>
+          <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Delivery</h2>
+          <p className="leading-relaxed text-base text-center">All in one app for your campus for - Personalized engagements</p>
         </div>
       </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+      <div className="xl:w-1/3 md:w-1/2 p-4">
+        <div className="p-6">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
             <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712973875/carbon_customer_xzqqb9.png" className="h-20" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Customer</h2>
-          <p class="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
+          <h2 className="text-lg text-gray-900 font-medium title-font mb-2 text-center">Customer</h2>
+          <p className="leading-relaxed text-base text-center">Get exclusive student discount, no more queuing at merchant places</p>
         </div>
       </div>
     </div>
-    {/* <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}
+    {/* <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}
   </div>
 </section>
-<section class="text-gray-600 body-font">
+<section className="text-gray-600 body-font">
     <div>
    
    
-    <div class="text-center font-bold mb-10" id='sellers'>
-  <p class="inline-block text-4xl text-black">Campus Commers</p>
-  <span class="inline-block">&nbsp;</span>
-  <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">Solution for Sellers</p>
+    <div className="text-center font-bold mb-10" id='sellers'>
+  <p className="inline-block text-4xl text-black">Campus Commers</p>
+  <span className="inline-block">&nbsp;</span>
+  <span className="inline-block">&nbsp;</span>
+  <p className="inline-block text-4xl text-custom-orange">Solution for Sellers</p>
 </div>
 
     </div>
-    <div class="container w-full mx-auto flex justify-center">
-    <div class="flex items-center text-center">
+    <div className="container w-full mx-auto flex justify-center">
+    <div className="flex items-center text-center">
       <div ref={fourthItemRef} className={`${fourthItemInView ? 'slide-in-left' : 'slide-out-left'}`}>
 
-        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1715498249/Group_66_iabzlb.png" class='h-80' alt=""/>
+        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1715498249/Group_66_iabzlb.png" className='h-80' alt=""/>
       </div>
       <div ref={fifthItemRef} className={`${fifthItemInView ? 'slide-in-right' : 'slide-out-right'}`}>
         
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Do You have Business inside or 
-            <br class="hidden lg:inline-block"/>vicinity of The Campus 
+        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Do You have Business inside or 
+            <br className="hidden lg:inline-block"/>vicinity of The Campus 
         </h1>
-        <p class="mb-8 leading-relaxed text-custom-orange">Here Is the perfect Digitization Option for You</p>
-        <div class="flex justify-center">
+        <p className="mb-8 leading-relaxed text-custom-orange">Here Is the perfect Digitization Option for You</p>
+        <div className="flex justify-center">
             <Link href={'/components/Connect#User'} style={{
           background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
-        }} class="inline-flex text-white  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</Link>
+        }} className="inline-flex text-white  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Explore</Link>
            
         </div>
       </div>
@@ -247,71 +247,75 @@ const Business = () => {
 
 </section>
 
-<section ref={secondSectionRef} class={`text-gray-600 body-font ${secondSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
-  <div class="container px-5 py-24 mx-auto">
-  <div class="text-center font-bold mb-10">
-  <p class="inline-block text-4xl text-black">Our</p>
-  <span class="inline-block">&nbsp;</span>
-  <span class="inline-block">&nbsp;</span>
-  <p class="inline-block text-4xl text-custom-orange">Solution</p>
+<section ref={secondSectionRef} className={`text-gray-600 body-font ${secondSectionInView ? 'animate__animated animate__bounceInUp fade-in' : 'fade-out'}`}>
+  <div className="container px-5 py-24 mx-auto">
+  <div className="text-center font-bold mb-10">
+  <p className="inline-block text-4xl text-black">Our</p>
+  <span className="inline-block">&nbsp;</span>
+  <span className="inline-block">&nbsp;</span>
+  <p className="inline-block text-4xl text-custom-orange">Solution</p>
 </div>
-    <div class="flex flex-wrap -m-4">
+    <div className="flex flex-wrap -m-4">
     
      
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
-            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712975084/Vector_xmxtn1.png" className="h-20" alt="" />
+      <div className="xl:w-1/3 md:w-1/2 p-4 ">
+        <div className="p-6 border-2 rounded-md shadow-md">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718082003/dlrd1inr6zsh2qc9nhoc.webp" className="h-20 w-20 rounded-full" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Fast Service</h2>
-          <p class="leading-relaxed text-base text-center"> Say goodbye to long queues
- in the canteens.
+          <h2 className="text-lg text-gray-900 font-bold title-font mb-2 text-center">Virtual Ordering</h2>
+          <p className="leading-relaxed text-base text-center"> Order through the app, view the menu, and track orders live.
+
 </p>
         </div>
       </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
-            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712973875/carbon_customer_xzqqb9.png" className="h-20" alt="" />
+      <div className="xl:w-1/3 md:w-1/2 p-4 ">
+        <div className="p-6 border-2  rounded-md shadow-md">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718082003/uovyzwvbvncuciy0ff10.webp" className="h-20 w-20 rounded-full" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Easy Access</h2>
-          <p class="leading-relaxed text-base text-center">Receive food orders directly through our application, not via WhatsApp.</p>
+          <h2 className="text-lg text-gray-900 font-bold title-font mb-2 text-center">Eliminate Crowding</h2>
+          <p className="leading-relaxed text-base text-center">Long queues disappear with our self-pickup option.
+          </p>
         </div>
       </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
-            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712975698/carbon_location_y81pl6.png" className="h-20" alt="" />
+      <div className="xl:w-1/3 md:w-1/2 p-4 ">
+        <div className="p-6 border-2 rounded-md shadow-md">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718082001/drqjac3qzamm0rzwjtee.webp" className="h-20 w-20 rounded-full" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Live Tracking</h2>
-          <p class="leading-relaxed text-base text-center">Enjoy improved order tracking and convenience.</p>
+          <h2 className="text-lg text-gray-900 font-bold title-font mb-2 text-center">E-commerce Drop-off via IoT</h2>
+          <p className="leading-relaxed text-base text-center">No need for delivery agents; drop-offs happen through IoT S-Box.
+          </p>
         </div>
       </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
-            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714207989/solar_tag-price-bold_msnfaj.png" className="h-20" alt="" />
+      <div className="xl:w-1/3 md:w-1/2 p-4 ">
+        <div className="p-6 border-2 rounded-md shadow-md">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718082002/xueggi03umoxuzes8ilz.webp" className="h-20 rounded-full" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Customization</h2>
-          <p class="leading-relaxed text-base text-center">Customization Capabilities for Product Prices</p>
+          <h2 className="text-lg text-gray-900 font-bold title-font mb-2 text-center">Mess Management</h2>
+          <p className="leading-relaxed text-base text-center">Digitize the mess hall with pre-booking, customization, offers, and subscriptions.
+          </p>
         </div>
       </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
-            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1712975085/icon-park-outline_correct_tw3kdn.png" className="h-20" alt="" />
+      <div className="xl:w-1/3 md:w-1/2 p-4 ">
+        <div className="p-6 border-2 rounded-md shadow-md">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718082001/lxnxxbhrzyxmx8gem1gq.webp" className="h-20 w-20 rounded-full" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Assurance</h2>
-          <p class="leading-relaxed text-base text-center">Free from hefty commissions.</p>
+          <h2 className="text-lg text-gray-900 font-bold title-font mb-2 text-center">Food Court Digitization</h2>
+          <p className="leading-relaxed text-base text-center">Book dining, order seamlessly, e-bill, pay online, and give feedback.
+          </p>
         </div>
       </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="p-6 rounded-lg">
-          <div class="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
-            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714207992/mdi_support_pgo23b.png" className="h-20" alt="" />
+      <div className="xl:w-1/3 md:w-1/2 p-4 ">
+        <div className="p-6  border-2 rounded-md shadow-md">
+          <div className="w-full h-10 inline-flex items-center justify-center rounded-full text-custom-orange mb-4">
+            <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1718082001/l7qdgwf9m4iq6oflzxnm.webp" className="h-24 w-24 rounded-full" alt="" />
           </div>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2 text-center">Customer Supporr</h2>
-          <p class="leading-relaxed text-base text-center">Seamless 24/7 Tech & Customer Support.</p>
+          <h2 className="text-lg text-gray-900 font-bold title-font mb-2 text-center">Customization</h2>
+          <p className="leading-relaxed text-base text-center"> Tailor all features to campus requirements for a unique experience.</p>
         </div>
       </div>
        

@@ -40,7 +40,7 @@ const Navbar = () => {
         style={{
           background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
         }} x-data="{open:false}">
-        <div className="relative  flex items-center justify-between "
+        <div className="relative py-1 flex items-center justify-between "
           style={{
             background: 'linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)'
           }}>
@@ -69,30 +69,30 @@ const Navbar = () => {
             </button>
           </div>
 
-          <ul className="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex">
+          <ul className="hidden lg:w-auto lg:space-x-10 lg:items-center lg:flex">
             <li>
-              <Link href="/" className="text-l font-bold hover:bg-White rounded-full text-white hover:px-2 transition-all">
+              <Link href="/" className=" font-bold hover:bg-White rounded-full text-white hover:px-2 transition-all">
                 <p className=' rounded-full w-full h-full'
               >Home</p>
               </Link>
             </li>
             <li>
-              <Link href="#" className="ext-l font-bold hover:bg-White rounded-full text-white hover:px-2 transition-all">
+              <Link href="/#about" className=" font-bold hover:bg-White rounded-full text-white hover:px-2 transition-all">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/components/Business" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+              <Link href="/components/Business" className=" font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Student
               </Link>
             </li>
             <li>
-              <Link href="/components/Business#sellers" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+              <Link href="/components/Business#sellers" className=" font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Sellers
               </Link>
             </li>
             <li>
-              <Link href="/components/Connect" className="ext-l font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
+              <Link href="/components/Connect" className=" font-bold hover:bg-White rounded-full text-white  hover:px-2 transition-all">
                 Our Tech
               </Link>
             </li>
