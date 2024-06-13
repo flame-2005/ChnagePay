@@ -264,7 +264,7 @@ className="text-white body-font mt-10">
   <p className="inline-block text-4xl text-custom-orange">SmartBox Works? </p>
 </div>
  </div>
-  <div className="ml-16 container mx-auto flex px-5 md:flex-row flex-col justify-center items-center">
+  <div className="mr-14 container mx-auto flex px-5 md:flex-row flex-col justify-center items-center">
    
 <ol className="relative border-s border-gray-200 dark:border-gray-700 mt-16">                  
     <li  className={`mb-10 ms-6 `}>            
