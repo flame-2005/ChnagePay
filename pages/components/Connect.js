@@ -145,7 +145,7 @@ const Connect = () => {
  </div>
  <ol
 
-  className={ `md:flex md:justify-center md:gap-6  p-10 `}>
+  className={ `md:flex ml-14 md:gap-6  p-10 `}>
   {/* <!--First item--> */}
   <li ref={firstItemRef} className={`border-2 p-2  rounded-md max-w-sm ${firstItemInView ? 'slide-in-right' : 'slide-out-right'}`}>
   <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1714297758/Ellipse_64_azpkkk.png" className='border rounded-full h-36 mt-5 mx-auto' alt="" />
